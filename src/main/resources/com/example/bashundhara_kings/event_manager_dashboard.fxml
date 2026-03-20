@@ -8,8 +8,7 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="681.0" prefWidth="602.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bashundhara_kings.EventManagerDashboardController">
+<AnchorPane prefHeight="607.0" prefWidth="602.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bashundhara_kings.EventManagerDashboardController">
    <children>
       <Label contentDisplay="CENTER" layoutX="48.0" layoutY="31.0" text="SPORTS CLUB - EVENT MANAGER">
          <font>
@@ -19,7 +18,7 @@
       <Label layoutX="48.0" layoutY="58.0" text="Welcome" />
       <Label layoutX="106.0" layoutY="58.0" text="Label" />
       <Button layoutX="519.0" layoutY="32.0" mnemonicParsing="false" prefHeight="9.0" prefWidth="59.0" text="Log Out" />
-      <GridPane layoutX="48.0" layoutY="145.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="500.0" prefWidth="500.0">
+      <GridPane layoutX="48.0" layoutY="145.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="378.0" prefWidth="482.0">
         <columnConstraints>
           <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
           <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -31,14 +30,14 @@
             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <Button contentDisplay="CENTER" mnemonicParsing="false" prefHeight="104.0" prefWidth="250.0" text="PUBLISH EVENT NOTICE" GridPane.rowIndex="2" />
-            <Button contentDisplay="CENTER" mnemonicParsing="false" prefHeight="103.0" prefWidth="250.0" text="ASSIGN TO EVENT" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Button contentDisplay="CENTER" mnemonicParsing="false" prefHeight="82.0" prefWidth="242.0" text="PUBLISH EVENT NOTICE" GridPane.rowIndex="2" />
+            <Button contentDisplay="CENTER" mnemonicParsing="false" prefHeight="82.0" prefWidth="242.0" text="ASSIGN TO EVENT" GridPane.columnIndex="1" GridPane.rowIndex="2" />
             <Button contentDisplay="CENTER" mnemonicParsing="false" prefHeight="113.0" prefWidth="250.0" text="SEND NOTIFICATION" GridPane.rowIndex="3" />
             <Button contentDisplay="CENTER" mnemonicParsing="false" prefHeight="115.0" prefWidth="256.0" text="APPROVE EVENT" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="111.0" prefWidth="250.0" text="VIEW SCHEDULE" GridPane.columnIndex="1" />
+            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="84.0" prefWidth="242.0" text="VIEW SCHEDULE" GridPane.columnIndex="1" />
             <Button contentDisplay="CENTER" mnemonicParsing="false" prefHeight="82.0" prefWidth="258.0" text="Button" />
-            <Button alignment="CENTER" contentDisplay="CENTER" graphicTextGap="10.0" mnemonicParsing="false" prefHeight="112.0" prefWidth="250.0" text="CREATE EVENT" />
-            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="117.0" prefWidth="250.0" text="EDIT EVENT" GridPane.rowIndex="1" />
+            <Button alignment="CENTER" contentDisplay="CENTER" graphicTextGap="10.0" mnemonicParsing="false" prefHeight="82.0" prefWidth="242.0" text="CREATE EVENT" />
+            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="100.0" prefWidth="242.0" text="EDIT EVENT" GridPane.rowIndex="1" />
             <Button alignment="CENTER" contentDisplay="CENTER" graphicTextGap="10.0" mnemonicParsing="false" prefHeight="116.0" prefWidth="250.0" text="DELETE EVENT" GridPane.columnIndex="1" GridPane.rowIndex="1" />
          </children>
       </GridPane>
