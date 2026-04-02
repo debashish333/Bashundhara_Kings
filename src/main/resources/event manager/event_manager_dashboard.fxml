@@ -30,11 +30,11 @@
             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <Button contentDisplay="CENTER" mnemonicParsing="false" prefHeight="82.0" prefWidth="242.0" text="PUBLISH EVENT NOTICE" GridPane.rowIndex="2" />
+            <Button contentDisplay="CENTER" mnemonicParsing="false" prefHeight="82.0" prefWidth="242.0" text="VIEW SCHEDULE" GridPane.rowIndex="2" />
             <Button contentDisplay="CENTER" mnemonicParsing="false" prefHeight="82.0" prefWidth="242.0" text="ASSIGN TO EVENT" GridPane.columnIndex="1" GridPane.rowIndex="2" />
             <Button contentDisplay="CENTER" mnemonicParsing="false" prefHeight="113.0" prefWidth="250.0" text="SEND NOTIFICATION" GridPane.rowIndex="3" />
             <Button contentDisplay="CENTER" mnemonicParsing="false" prefHeight="115.0" prefWidth="256.0" text="APPROVE EVENT" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="84.0" prefWidth="242.0" text="VIEW SCHEDULE" GridPane.columnIndex="1" />
+            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="84.0" prefWidth="242.0" text="VIEW TODAY'S EVENT" GridPane.columnIndex="1" />
             <Button contentDisplay="CENTER" mnemonicParsing="false" prefHeight="82.0" prefWidth="258.0" text="Button" />
             <Button alignment="CENTER" contentDisplay="CENTER" graphicTextGap="10.0" mnemonicParsing="false" prefHeight="82.0" prefWidth="242.0" text="CREATE EVENT" />
             <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="100.0" prefWidth="242.0" text="EDIT EVENT" GridPane.rowIndex="1" />
