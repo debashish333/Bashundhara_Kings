@@ -1,14 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.example.bashundhara_kings.Security Guard.CheckSalaryInfoController"
-            prefHeight="400.0" prefWidth="600.0">
 
+<AnchorPane prefHeight="448.0" prefWidth="628.0" style="-fx-background-color: green;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bashundhara_kings.Security Guard.CheckSalaryInfoController">
+   <children>
+      <Label layoutX="168.0" layoutY="21.0" text=" SALARY INFORMATION  " textFill="#faf5f5">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="147.0" layoutY="87.0" text="CURRENT MONTH:" textFill="#f2ecec" />
+      <DatePicker layoutX="253.0" layoutY="83.0" />
+      <Label layoutX="156.0" layoutY="191.0" text=" NET SALARY:" textFill="#fffefe" />
+      <Label layoutX="253.0" layoutY="191.0" prefHeight="18.0" prefWidth="164.0" style="-fx-background-color: white;" textFill="#f0e9e9" />
+      <Button layoutX="282.0" layoutY="137.0" mnemonicParsing="false" text="Load the net salary" />
+      <Label layoutX="233.0" layoutY="233.0" text="--- GUARD VERIFICATION---" textFill="#f4eded" />
+      <Label layoutX="157.0" layoutY="275.0" text=" Employee ID" textFill="#f7ecec" />
+      <Label layoutX="154.0" layoutY="311.0" text="Employee Name" textFill="#faf5f5" />
+      <Label layoutX="153.0" layoutY="345.0" text="Current month" textFill="#f4eeee" />
+      <TextField layoutX="266.0" layoutY="271.0" />
+      <TextField layoutX="266.0" layoutY="307.0" />
+      <DatePicker layoutX="253.0" layoutY="341.0" />
+      <Button layoutX="270.0" layoutY="397.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="130.0" text="verification" />
+   </children>
 </AnchorPane>
