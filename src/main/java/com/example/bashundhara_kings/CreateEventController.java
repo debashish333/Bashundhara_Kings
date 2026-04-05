@@ -1,10 +1,13 @@
 package com.example.bashundhara_kings;
 
 import javafx.event.ActionEvent;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
+import javafx.scene.layout.AnchorPane;
 
 public class CreateEventController
 {
@@ -20,6 +23,8 @@ public class CreateEventController
     private TextField timetextfield;
     @javafx.fxml.FXML
     private TextArea descriptiontextfield;
+    @javafx.fxml.FXML
+    private AnchorPane mainpane;
 
     @javafx.fxml.FXML
     public void initialize() {
@@ -31,6 +36,18 @@ public class CreateEventController
 
     @javafx.fxml.FXML
     public void backButtonONACTION(ActionEvent actionEvent) {
+
+        try {
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("event_manager_dashboard.fxml"));
+            Node node=fxmlLoader.load();
+            mainpane.getChildren().setAll(node);
+
+
+
+        }
+        catch (Exception e){
+            e.printStackTrace();
+        }
     }
 
     @javafx.fxml.FXML

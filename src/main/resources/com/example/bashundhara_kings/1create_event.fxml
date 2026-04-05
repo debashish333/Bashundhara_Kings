@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="368.0" prefWidth="585.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bashundhara_kings.CreateEventController">
+<AnchorPane fx:id="mainpane" prefHeight="368.0" prefWidth="585.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bashundhara_kings.CreateEventController">
    <children>
       <Label layoutX="43.0" layoutY="31.0" text="CREATE NEW EVENT">
          <font>
