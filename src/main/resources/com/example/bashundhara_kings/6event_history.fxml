@@ -28,5 +28,6 @@
       </TableView>
       <Label layoutX="53.0" layoutY="146.0" text="Event ID:" />
       <TextField layoutX="130.0" layoutY="142.0" />
+      <Button layoutX="696.0" layoutY="21.0" mnemonicParsing="false" onAction="#backButtonOnActoin" prefHeight="26.0" prefWidth="47.0" text="back" />
    </children>
 </AnchorPane>
