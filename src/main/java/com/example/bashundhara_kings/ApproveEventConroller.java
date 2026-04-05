@@ -1,5 +1,8 @@
 package com.example.bashundhara_kings;
 
+import javafx.event.ActionEvent;
+import javafx.scene.control.*;
+
 public class ApproveEventConroller
 {
     @javafx.fxml.FXML

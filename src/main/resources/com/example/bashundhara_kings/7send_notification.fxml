@@ -7,7 +7,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bashundhara_kings.SendNotificationController">
    <children>
       <Label layoutX="46.0" layoutY="33.0" text=" SEND NOTIFICATION">
@@ -15,11 +14,11 @@
             <Font name="System Bold" size="18.0" />
          </font>
       </Label>
-      <Button layoutX="548.0" layoutY="34.0" mnemonicParsing="false" text="Back" />
+      <Button layoutX="548.0" layoutY="34.0" mnemonicParsing="false" onAction="#backOnaction" text="Back" />
       <Label layoutX="46.0" layoutY="77.0" text="Select User:" />
-      <ComboBox layoutX="119.0" layoutY="73.0" prefWidth="150.0" />
-      <TextArea layoutX="77.0" layoutY="152.0" prefHeight="126.0" prefWidth="488.0" />
-      <Button layoutX="223.0" layoutY="298.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="173.0" text="Send Notification" />
+      <ComboBox fx:id="selectuserCombobox" layoutX="119.0" layoutY="73.0" prefWidth="150.0" />
+      <TextArea fx:id="messageLabel" layoutX="77.0" layoutY="152.0" prefHeight="126.0" prefWidth="488.0" />
+      <Button layoutX="223.0" layoutY="298.0" mnemonicParsing="false" onAction="#sendNotificationButtonONAction" prefHeight="26.0" prefWidth="173.0" text="Send Notification" />
       <Label layoutX="56.0" layoutY="132.0" text="Message:" />
    </children>
 </AnchorPane>

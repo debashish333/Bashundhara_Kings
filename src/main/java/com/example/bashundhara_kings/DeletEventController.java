@@ -1,5 +1,8 @@
 package com.example.bashundhara_kings;
 
+import javafx.event.ActionEvent;
+import javafx.scene.control.TableColumn;
+
 public class DeletEventController
 {
     @javafx.fxml.FXML
