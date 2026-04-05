@@ -1,6 +1,6 @@
 package com.example.bashundhara_kings;
 
-public class ViewEventScheduleController
+public class DeletEventController
 {
     @javafx.fxml.FXML
     private TableColumn timeTablecolumn;
@@ -9,11 +9,7 @@ public class ViewEventScheduleController
     @javafx.fxml.FXML
     private TableColumn typeTablecolumn;
     @javafx.fxml.FXML
-    private AnchorPane mainpane;
-    @javafx.fxml.FXML
     private TableColumn dateTablecolumn;
-    @javafx.fxml.FXML
-    private Label messageLabel;
     @javafx.fxml.FXML
     private TableColumn idTablecolumn;
 
@@ -22,10 +18,18 @@ public class ViewEventScheduleController
     }
 
     @javafx.fxml.FXML
-    public void backButtonONACTION(ActionEvent actionEvent) {
+    public void LoadButtonOnAction(ActionEvent actionEvent) {
     }
 
     @javafx.fxml.FXML
-    public void refreshButtonOnAction(ActionEvent actionEvent) {
+    public void backbuttonOnAction(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void deletOnAction(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void selectONAction(ActionEvent actionEvent) {
     }
 }
