@@ -7,7 +7,9 @@ import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
-public class EventManagerDashboardController
+import java.io.Serializable;
+
+public class EventManagerDashboardController implements Serializable
 {
     @javafx.fxml.FXML
     private AnchorPane mainpane;
@@ -17,35 +19,41 @@ public class EventManagerDashboardController
     }
 
     @javafx.fxml.FXML
-    public void createventOnAtion(ActionEvent actionEvent) throws Exception {
+    public void createventOnAtion(ActionEvent actionEvent)  {
 
 
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("1create_event.fxml"));
-        Scene scene = new Scene(fxmlLoader.load());
-        Stage stage=new Stage();
-        stage.setScene(scene);
-        stage.show();
+        try {
+            FXMLLoader fxmlLoader=new FXMLLoader(getClass().getResource("1create_event.fxml"));
+            Node node=fxmlLoader.load();
+            mainpane.getChildren().setAll(node);
+        }
+        catch (Exception e){
+            e.printStackTrace();
+        }
     }
 
-    @Deprecated
-    public void viewTodayseventOnAtion(ActionEvent actionEvent) throws Exception{
-
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("5view_todays.fxml"));
-        Scene scene = new Scene(fxmlLoader.load());
-        Stage stage=new Stage();
-        stage.setScene(scene);
-        stage.show();
-    }
+//    @Deprecated
+//    public void viewTodayseventOnAtion(ActionEvent actionEvent) throws Exception{
+//
+//        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("5view_todays.fxml"));
+//        Scene scene = new Scene(fxmlLoader.load());
+//        Stage stage=new Stage();
+//        stage.setScene(scene);
+//        stage.show();
+//    }
 
     @javafx.fxml.FXML
-    public void viewscheduleOnAtion(ActionEvent actionEvent)throws Exception{
+    public void viewscheduleOnAtion(ActionEvent actionEvent){
 
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("2view_event_schedule.fxml"));
-        Scene scene = new Scene(fxmlLoader.load());
-        Stage stage=new Stage();
-        stage.setScene(scene);
-        stage.show();
+       try {
+           FXMLLoader fxmlLoader=new FXMLLoader(getClass().getResource("2view_event_schedule.fxml"));
+           Node node=fxmlLoader.load();
+           mainpane.getChildren().setAll(node);
 
+       }
+       catch (Exception e){
+           e.printStackTrace();
+       }
     }
 
     @javafx.fxml.FXML
@@ -58,51 +66,75 @@ public class EventManagerDashboardController
     }
 
     @javafx.fxml.FXML
-    public void sendnotificatiOnAction(ActionEvent actionEvent) throws Exception{
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("7send_notification.fxml"));
-        Scene scene = new Scene(fxmlLoader.load());
-        Stage stage=new Stage();
-        stage.setScene(scene);
-        stage.show();
+    public void sendnotificatiOnAction(ActionEvent actionEvent) {
+
+        try {
+            FXMLLoader fxmlLoader=new FXMLLoader(getClass().getResource("7send_notification.fxml"));
+            Node node=fxmlLoader.load();
+            mainpane.getChildren().setAll(node);
+        }
+        catch (Exception e){
+            e.printStackTrace();
+        }
     }
 
     @javafx.fxml.FXML
-    public void editeventOnAtion(ActionEvent actionEvent) throws Exception{
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("3edit_event.fxml"));
-        Scene scene = new Scene(fxmlLoader.load());
-        Stage stage=new Stage();
-        stage.setScene(scene);
-        stage.show();
+    public void editeventOnAtion(ActionEvent actionEvent){
+        try {
+            FXMLLoader fxmlLoader=new FXMLLoader(getClass().getResource("3edit_event.fxml"));
+            Node node=fxmlLoader.load();
+            mainpane.getChildren().setAll(node);
+        }
+        catch (Exception e){
+            e.printStackTrace();
+        }
     }
 
     @javafx.fxml.FXML
-    public void eventhistoryOnAtion(ActionEvent actionEvent) throws Exception{
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("6event_history.fxml"));
-        Scene scene = new Scene(fxmlLoader.load());
-        Stage stage=new Stage();
-        stage.setScene(scene);
-        stage.show();
+    public void eventhistoryOnAtion(ActionEvent actionEvent){
+        try {
+            FXMLLoader fxmlLoader=new FXMLLoader(getClass().getResource("6event_history.fxml"));
+            Node node=fxmlLoader.load();
+            mainpane.getChildren().setAll(node);
+        }
+        catch (Exception e){
+            e.printStackTrace();
+        }
     }
 
     @javafx.fxml.FXML
-    public void approveeventOnActoin(ActionEvent actionEvent) throws Exception{
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("8approve_event.fxml"));
-        Scene scene = new Scene(fxmlLoader.load());
-        Stage stage=new Stage();
-        stage.setScene(scene);
-        stage.show();
+    public void approveeventOnActoin(ActionEvent actionEvent) {
+        try {
+            FXMLLoader fxmlLoader=new FXMLLoader(getClass().getResource("8approve_event.fxml"));
+            Node node=fxmlLoader.load();
+            mainpane.getChildren().setAll(node);
+        }
+        catch (Exception e){
+            e.printStackTrace();
+        }
     }
 
     @javafx.fxml.FXML
-    public void deleteventOnAtion(ActionEvent actionEvent)throws  Exception {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("4delet_event.fxml"));
-        Scene scene = new Scene(fxmlLoader.load());
-        Stage stage=new Stage();
-        stage.setScene(scene);
-        stage.show();
+    public void deleteventOnAtion(ActionEvent actionEvent) {
+        try {
+            FXMLLoader fxmlLoader=new FXMLLoader(getClass().getResource("4delet_event.fxml"));
+            Node node=fxmlLoader.load();
+            mainpane.getChildren().setAll(node);
+        }
+        catch (Exception e){
+            e.printStackTrace();
+        }
     }
 
     @javafx.fxml.FXML
     public void manageVIPguestONAction(ActionEvent actionEvent) {
+        try {
+            FXMLLoader fxmlLoader=new FXMLLoader(getClass().getResource("5manag_VIP _guests_EventManager.fxml"));
+            Node node=fxmlLoader.load();
+            mainpane.getChildren().setAll(node);
+        }
+        catch (Exception e){
+            e.printStackTrace();
+        }
     }
 }

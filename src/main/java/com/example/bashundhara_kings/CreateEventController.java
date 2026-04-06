@@ -11,7 +11,9 @@ import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
-public class CreateEventController
+import java.io.Serializable;
+
+public class CreateEventController implements Serializable
 {
     @javafx.fxml.FXML
     private DatePicker date;
@@ -39,11 +41,15 @@ public class CreateEventController
     @javafx.fxml.FXML
     public void backButtonONACTION(ActionEvent actionEvent)throws Exception {
 
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("event_manager_dashboard.fxml"));
-        Scene scene = new Scene(fxmlLoader.load());
-        Stage stage=new Stage();
-        stage.setScene(scene);
-        stage.show();
+        try {
+
+            FXMLLoader fxmlLoader= new FXMLLoader(getClass().getResource("event_manager_dashboard.fxml"));
+            Node node=fxmlLoader.load();
+            mainpane.getChildren().setAll(node);
+        }
+        catch (Exception e){
+            e.printStackTrace();
+        }
     }
 
     @javafx.fxml.FXML

@@ -2,6 +2,7 @@ package com.example.bashundhara_kings;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.layout.AnchorPane;
@@ -41,12 +42,15 @@ public class EditEventController
     }
 
     @javafx.fxml.FXML
-    public void bacjButtonOnActoin(ActionEvent actionEvent) throws Exception{
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("event_manager_dashboard.fxml"));
-        Scene scene = new Scene(fxmlLoader.load());
-        Stage stage=new Stage();
-        stage.setScene(scene);
-        stage.show();
+    public void bacjButtonOnActoin(ActionEvent actionEvent) {
+        try {
+            FXMLLoader fxmlLoader=new FXMLLoader(getClass().getResource("event_manager_dashboard.fxml"));
+            Node node=fxmlLoader.load();
+            mainpane.getChildren().setAll(node);
+        }
+        catch (Exception e){
+            e.printStackTrace();
+        }
     }
 
     @javafx.fxml.FXML

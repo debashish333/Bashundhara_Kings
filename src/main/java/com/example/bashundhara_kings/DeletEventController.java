@@ -2,8 +2,10 @@ package com.example.bashundhara_kings;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.scene.control.TableColumn;
+import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
 public class DeletEventController
@@ -30,12 +32,15 @@ public class DeletEventController
     }
 
     @javafx.fxml.FXML
-    public void backbuttonOnAction(ActionEvent actionEvent)throws Exception {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("event_manager_dashboard.fxml"));
-        Scene scene = new Scene(fxmlLoader.load());
-        Stage stage=new Stage();
-        stage.setScene(scene);
-        stage.show();
+    public void backbuttonOnAction(ActionEvent actionEvent) {
+        try {
+            FXMLLoader fxmlLoader=new FXMLLoader(getClass().getResource("event_manager_dashboard.fxml"));
+            Node node=fxmlLoader.load();
+            mainpane.getChildren().setAll(node);
+        }
+        catch (Exception e){
+            e.printStackTrace();
+        }
     }
 
     @javafx.fxml.FXML

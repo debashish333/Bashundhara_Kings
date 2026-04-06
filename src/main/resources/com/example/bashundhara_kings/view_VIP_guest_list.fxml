@@ -9,7 +9,7 @@
 <?import javafx.scene.text.Font?>
 
 
-<AnchorPane prefHeight="530.0" prefWidth="615.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bashundhara_kings.ViewVIPGuestListController">
+<AnchorPane prefHeight="530.0" prefWidth="615.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bashundhara_kings.ViewVIPGuestListforSceutityGuardController">
    <children>
       <Label layoutX="159.0" layoutY="23.0" text="View VIP Guest Details ">
          <font>
