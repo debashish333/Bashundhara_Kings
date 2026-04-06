@@ -27,7 +27,7 @@ public class EventManagerDashboardController
         stage.show();
     }
 
-    @javafx.fxml.FXML
+    @Deprecated
     public void viewTodayseventOnAtion(ActionEvent actionEvent) throws Exception{
 
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("5view_todays.fxml"));
@@ -100,5 +100,9 @@ public class EventManagerDashboardController
         Stage stage=new Stage();
         stage.setScene(scene);
         stage.show();
+    }
+
+    @javafx.fxml.FXML
+    public void manageVIPguestONAction(ActionEvent actionEvent) {
     }
 }

@@ -17,8 +17,8 @@
       <Button layoutX="508.0" layoutY="25.0" mnemonicParsing="false" onAction="#backButtonONACTION" text="BACK" />
       <TableView layoutX="23.0" layoutY="108.0" prefHeight="180.0" prefWidth="562.0">
         <columns>
-          <TableColumn fx:id="idTablecolumn" prefWidth="97.5999755859375" text="ID" />
-          <TableColumn fx:id="typeTablecolumn" prefWidth="100.79998779296875" text="Type  " />
+          <TableColumn fx:id="idTablecolumn" prefWidth="97.5999755859375" text="Event ID" />
+          <TableColumn fx:id="typeTablecolumn" prefWidth="100.79998779296875" text="Event Type  " />
             <TableColumn fx:id="dateTablecolumn" prefWidth="107.20001220703125" text="Date     " />
             <TableColumn fx:id="venueTablecolumn" prefWidth="115.199951171875" text="Venue  " />
             <TableColumn fx:id="timeTablecolumn" prefWidth="140.00006103515625" text="Time" />
