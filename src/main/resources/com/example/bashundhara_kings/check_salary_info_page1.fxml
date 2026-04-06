@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="472.0" prefWidth="565.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bashundhara_kings.check_salary_infoController">
+<AnchorPane fx:id="mainpane" prefHeight="472.0" prefWidth="565.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bashundhara_kings.check_salary_infoController">
    <children>
       <Label layoutX="175.0" layoutY="34.0" text=" SALARY INFORMATION  " textFill="#1e1c1c">
          <font>
@@ -32,7 +32,7 @@
       </Label>
       <TextField layoutX="238.0" layoutY="168.0" />
       <DatePicker layoutX="238.0" layoutY="311.0" />
-      <Button layoutX="217.0" layoutY="378.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="130.0" text="verification" />
+      <Button layoutX="217.0" layoutY="378.0" mnemonicParsing="false" onAction="#verificationandnextsceneButtonOnActoin" prefHeight="26.0" prefWidth="130.0" text="verification" />
       <Button layoutX="505.0" layoutY="21.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="45.0" text="back" />
       <Label layoutX="115.0" layoutY="207.0" text="Password:" />
       <TextField layoutX="238.0" layoutY="203.0" />

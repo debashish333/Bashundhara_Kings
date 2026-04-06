@@ -9,15 +9,15 @@ import javafx.stage.Stage;
 public class ApproveEventConroller
 {
     @javafx.fxml.FXML
-    private ComboBox venueCombobox;
+    private ComboBox<String> venueCombobox;
     @javafx.fxml.FXML
     private DatePicker date;
     @javafx.fxml.FXML
-    private ComboBox eventtypeCombobox;
+    private ComboBox<String> eventtypeCombobox;
     @javafx.fxml.FXML
     private TextField idtextfield;
     @javafx.fxml.FXML
-    private ComboBox statusCombobox;
+    private ComboBox<String> statusCombobox;
     @javafx.fxml.FXML
     private TextArea reporttextArea;
     @javafx.fxml.FXML

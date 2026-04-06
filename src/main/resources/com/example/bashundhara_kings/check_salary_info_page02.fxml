@@ -29,6 +29,6 @@
       </TableView>
       <Button layoutX="431.0" layoutY="123.0" mnemonicParsing="false" onAction="#loadButtonOnaction" prefHeight="26.0" prefWidth="89.0" text="Load" />
       <Label layoutX="71.0" layoutY="73.0" prefHeight="18.0" prefWidth="223.0" text="Verification successfull!!" />
-      <Button layoutX="29.0" layoutY="11.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="62.0" text="back" />
+      <Button layoutX="29.0" layoutY="11.0" mnemonicParsing="false" onAction="#backButtonOnAction" prefHeight="18.0" prefWidth="62.0" text="back" />
    </children>
 </AnchorPane>

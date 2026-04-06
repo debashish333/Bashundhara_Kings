@@ -20,9 +20,9 @@ public class CreateEventController implements Serializable
     @javafx.fxml.FXML
     private TextField idtextfield;
     @javafx.fxml.FXML
-    private ComboBox typeCombobox;
+    private ComboBox<String> typeCombobox;
     @javafx.fxml.FXML
-    private ComboBox VanueCombobox;
+    private ComboBox<String> VanueCombobox;
     @javafx.fxml.FXML
     private TextField timetextfield;
     @javafx.fxml.FXML
@@ -32,6 +32,7 @@ public class CreateEventController implements Serializable
 
     @javafx.fxml.FXML
     public void initialize() {
+
     }
 
     @javafx.fxml.FXML
