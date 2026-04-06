@@ -5,7 +5,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.layout.AnchorPane;
 
-public class check_salary_infoController
+public class CheckSalaryInfoNextScene02Controller
 {
     @javafx.fxml.FXML
     private AnchorPane mainpane;
@@ -15,20 +15,11 @@ public class check_salary_infoController
     }
 
     @javafx.fxml.FXML
-    public void verificationandnextsceneButtonOnActoin(ActionEvent actionEvent) {
-        try {
-            FXMLLoader fxmlLoader=new FXMLLoader(getClass().getResource("check_salary_info_next_scene02.fxml"));
-            Node node=fxmlLoader.load();
-            mainpane.getChildren().setAll(node);
-        }
-        catch (Exception e){
-            e.printStackTrace();
-        }
+    public void loadButtonOnaction(ActionEvent actionEvent) {
     }
 
     @javafx.fxml.FXML
-    public void backOnAction(ActionEvent actionEvent) {
-
+    public void backButtonOnAction(ActionEvent actionEvent) {
         try {
             FXMLLoader fxmlLoader=new FXMLLoader(getClass().getResource("security_guard_dashbord.fxml"));
             Node node=fxmlLoader.load();

@@ -33,7 +33,7 @@
       <TextField layoutX="238.0" layoutY="168.0" />
       <DatePicker layoutX="238.0" layoutY="311.0" />
       <Button layoutX="217.0" layoutY="378.0" mnemonicParsing="false" onAction="#verificationandnextsceneButtonOnActoin" prefHeight="26.0" prefWidth="130.0" text="verification" />
-      <Button layoutX="505.0" layoutY="21.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="45.0" text="back" />
+      <Button layoutX="505.0" layoutY="21.0" mnemonicParsing="false" onAction="#backOnAction" prefHeight="26.0" prefWidth="45.0" text="back" />
       <Label layoutX="115.0" layoutY="207.0" text="Password:" />
       <TextField layoutX="238.0" layoutY="203.0" />
       <TextField layoutX="238.0" layoutY="248.0" />
