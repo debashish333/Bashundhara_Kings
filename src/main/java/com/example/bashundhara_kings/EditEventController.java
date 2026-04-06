@@ -10,23 +10,23 @@ import javafx.stage.Stage;
 public class EditEventController
 {
     @javafx.fxml.FXML
-    private TextField idTextField;
-    @javafx.fxml.FXML
-    private DatePicker date;
-    @javafx.fxml.FXML
-    private ComboBox venueCombobox;
-    @javafx.fxml.FXML
-    private TextArea descriptionTextfield;
-    @javafx.fxml.FXML
-    private ComboBox typeofeventCombobox;
-    @javafx.fxml.FXML
     private AnchorPane mainpane;
-    @javafx.fxml.FXML
-    private TextField timeTextfield;
     @javafx.fxml.FXML
     private Label messageLabel;
     @javafx.fxml.FXML
     private TextField SharchidTextfield;
+    @javafx.fxml.FXML
+    private TextField idtextfield;
+    @javafx.fxml.FXML
+    private ComboBox typeCombobox;
+    @javafx.fxml.FXML
+    private ComboBox VanueCombobox;
+    @javafx.fxml.FXML
+    private TextField timetextfield;
+    @javafx.fxml.FXML
+    private DatePicker date1;
+    @javafx.fxml.FXML
+    private TextArea descriptiontextfield;
 
     @javafx.fxml.FXML
     public void initialize() {
@@ -47,5 +47,9 @@ public class EditEventController
         Stage stage=new Stage();
         stage.setScene(scene);
         stage.show();
+    }
+
+    @javafx.fxml.FXML
+    public void clearButtonONACTION(ActionEvent actionEvent) {
     }
 }

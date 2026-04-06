@@ -13,6 +13,8 @@ public class SendNotificationController
     private ComboBox selectuserCombobox;
     @javafx.fxml.FXML
     private TextArea messageLabel;
+    @javafx.fxml.FXML
+    private AnchorPane mainpane;
 
     @javafx.fxml.FXML
     public void initialize() {

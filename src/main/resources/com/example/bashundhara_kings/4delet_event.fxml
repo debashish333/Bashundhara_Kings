@@ -8,21 +8,20 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bashundhara_kings.DeletEventController">
+<AnchorPane fx:id="mainpane" prefHeight="588.0" prefWidth="626.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bashundhara_kings.DeletEventController">
    <children>
       <Label layoutX="248.0" layoutY="33.0" text="DELETE EVENT">
          <font>
             <Font name="System Bold" size="19.0" />
          </font>
       </Label>
-      <Button layoutX="217.0" layoutY="372.0" mnemonicParsing="false" onAction="#LoadButtonOnAction" prefHeight="26.0" prefWidth="166.0" text="Load the table" />
+      <Button layoutX="217.0" layoutY="464.0" mnemonicParsing="false" onAction="#LoadButtonOnAction" prefHeight="26.0" prefWidth="166.0" text="Load the table" />
       <Button layoutX="448.0" layoutY="97.0" mnemonicParsing="false" onAction="#deletOnAction" prefHeight="26.0" prefWidth="79.0" text="DELETE" />
-      <Button layoutX="535.0" layoutY="413.0" mnemonicParsing="false" onAction="#backbuttonOnAction" prefHeight="18.0" prefWidth="50.0" text="back" />
+      <Button layoutX="549.0" layoutY="518.0" mnemonicParsing="false" onAction="#backbuttonOnAction" prefHeight="18.0" prefWidth="50.0" text="back" />
       <Label layoutX="68.0" layoutY="102.0" text="Sharch ID:" />
       <TextField layoutX="142.0" layoutY="98.0" />
       <Button layoutX="191.0" layoutY="135.0" mnemonicParsing="false" onAction="#selectONAction" text="Select" />
-      <TableView layoutX="29.0" layoutY="180.0" prefHeight="180.0" prefWidth="562.0">
+      <TableView layoutX="29.0" layoutY="180.0" prefHeight="262.0" prefWidth="562.0">
          <columns>
             <TableColumn fx:id="idTablecolumn" prefWidth="97.5999755859375" text="ID" />
             <TableColumn fx:id="typeTablecolumn" prefWidth="100.79998779296875" text="Type  " />

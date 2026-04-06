@@ -18,6 +18,8 @@ public class DeletEventController
     private TableColumn dateTablecolumn;
     @javafx.fxml.FXML
     private TableColumn idTablecolumn;
+    @javafx.fxml.FXML
+    private AnchorPane mainpane;
 
     @javafx.fxml.FXML
     public void initialize() {
