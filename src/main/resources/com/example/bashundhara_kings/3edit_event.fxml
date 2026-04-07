@@ -18,7 +18,7 @@
          </font>
       </Label>
       <Label layoutX="48.0" layoutY="82.0" text=" Sharch ID:" />
-      <Label fx:id="messageLabel" layoutX="292.0" layoutY="104.0" prefHeight="48.0" prefWidth="294.0" text="Venue availability: Checking..." textFill="#f26c0d">
+      <Label fx:id="messageLabel" layoutX="292.0" layoutY="104.0" prefHeight="48.0" prefWidth="294.0" text="message......" textFill="#f26c0d">
          <font>
             <Font name="System Bold" size="11.0" />
          </font>
