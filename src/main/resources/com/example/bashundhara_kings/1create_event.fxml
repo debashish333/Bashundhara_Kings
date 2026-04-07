@@ -25,11 +25,12 @@
       <DatePicker fx:id="date" layoutX="150.0" layoutY="166.0" prefHeight="26.0" prefWidth="164.0" />
       <Label layoutX="368.0" layoutY="170.0" text="Event Time:" />
       <TextField fx:id="timetextfield" layoutX="455.0" layoutY="166.0" promptText="Enter event Time" />
-      <Label layoutX="57.0" layoutY="406.0" text="Event Venue" />
-      <ComboBox fx:id="VanueCombobox" layoutX="149.0" layoutY="411.0" prefWidth="150.0" />
+      <Label layoutX="57.0" layoutY="415.0" text="Event Venue" />
+      <ComboBox fx:id="VanueCombobox" layoutX="149.0" layoutY="411.0" prefHeight="26.0" prefWidth="263.0" />
       <Label layoutX="43.0" layoutY="293.0" text="Event Description:" />
       <TextArea fx:id="descriptiontextfield" layoutX="149.0" layoutY="220.0" prefHeight="148.0" prefWidth="278.0" />
       <Button layoutX="488.0" layoutY="258.0" mnemonicParsing="false" onAction="#saveButtonONACTION" prefHeight="44.0" prefWidth="82.0" text="SAVE" />
       <Button layoutX="495.0" layoutY="333.0" mnemonicParsing="false" onAction="#clearButtonONACTION" prefHeight="44.0" prefWidth="82.0" text="CLEAR " />
+      <Label fx:id="messageLabel" layoutX="149.0" layoutY="493.0" prefHeight="18.0" prefWidth="222.0" />
    </children>
 </AnchorPane>
