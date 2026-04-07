@@ -5,10 +5,11 @@ import java.time.LocalDate;
 
 public class Eventmanager implements Serializable {
 
-    private String eventType,description, venue,time,eventID;
+    private String eventType,description, venue,time;
+    private Integer eventID;
     private LocalDate eventDate;
 
-    public Eventmanager(String eventType, String description, String venue, String time, String eventID, LocalDate eventDate) {
+    public Eventmanager(String eventType, String description, String venue, String time, Integer eventID, LocalDate eventDate) {
         this.eventType = eventType;
         this.description = description;
         this.venue = venue;
@@ -49,11 +50,11 @@ public class Eventmanager implements Serializable {
         this.time = time;
     }
 
-    public String getEventID() {
+    public Integer getEventID() {
         return eventID;
     }
 
-    public void setEventID(String eventID) {
+    public void setEventID(Integer eventID) {
         this.eventID = eventID;
     }
 
@@ -72,7 +73,7 @@ public class Eventmanager implements Serializable {
                 ", description='" + description + '\'' +
                 ", venue='" + venue + '\'' +
                 ", time='" + time + '\'' +
-                ", eventID='" + eventID + '\'' +
+                ", eventID=" + eventID +
                 ", eventDate=" + eventDate +
                 '}';
     }

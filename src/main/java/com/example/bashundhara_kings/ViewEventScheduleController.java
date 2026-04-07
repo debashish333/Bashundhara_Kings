@@ -2,43 +2,98 @@ package com.example.bashundhara_kings;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
+import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.ObjectInputStream;
+import java.time.LocalDate;
 
 public class ViewEventScheduleController
 {
     @javafx.fxml.FXML
-    private TableColumn timeTablecolumn;
+    private TableColumn<Eventmanager,String> timeTablecolumn;
     @javafx.fxml.FXML
-    private TableColumn venueTablecolumn;
+    private TableColumn<Eventmanager,String> venueTablecolumn;
     @javafx.fxml.FXML
-    private TableColumn typeTablecolumn;
+    private TableColumn<Eventmanager,String> typeTablecolumn;
     @javafx.fxml.FXML
     private AnchorPane mainpane;
     @javafx.fxml.FXML
-    private TableColumn dateTablecolumn;
+    private TableColumn<Eventmanager, LocalDate> dateTablecolumn;
     @javafx.fxml.FXML
     private Label messageLabel;
     @javafx.fxml.FXML
-    private TableColumn idTablecolumn;
+    private TableColumn<Eventmanager,Integer> idTablecolumn;
+    @javafx.fxml.FXML
+    private TableView<Eventmanager> tableColumnView;
+
+    //String eventType, String description, String venue, String time, Integer eventID, LocalDate eventDate
 
     @javafx.fxml.FXML
     public void initialize() {
+        typeTablecolumn.setCellValueFactory(new PropertyValueFactory<>("eventType"));
+        venueTablecolumn.setCellValueFactory(new PropertyValueFactory<>("venue"));
+        timeTablecolumn.setCellValueFactory(new PropertyValueFactory<>("time"));
+        idTablecolumn.setCellValueFactory(new PropertyValueFactory<>("eventID"));
+        dateTablecolumn.setCellValueFactory(new PropertyValueFactory<>("eventDate"));
+
+
+
     }
 
     @javafx.fxml.FXML
     public void backButtonONACTION(ActionEvent actionEvent)throws Exception {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("event_manager_dashboard.fxml"));
-        Scene scene = new Scene(fxmlLoader.load());
-        Stage stage=new Stage();
-        stage.setScene(scene);
-        stage.show();
+        try {
+
+            FXMLLoader fxmlLoader= new FXMLLoader(getClass().getResource("event_manager_dashboard.fxml"));
+            Node node=fxmlLoader.load();
+            mainpane.getChildren().setAll(node);
+        }
+        catch (Exception e){
+            e.printStackTrace();
+        }
     }
 
     @javafx.fxml.FXML
     public void refreshButtonOnAction(ActionEvent actionEvent) {
+        File f = new File("Event.bin");
+        FileInputStream fis;
+        ObjectInputStream ois;
+
+        try {
+
+
+            fis=new FileInputStream(f);
+            ois= new ObjectInputStream(fis);
+            while (true) {
+
+                try {
+                    Eventmanager s = (Eventmanager) ois.readObject();
+                    tableColumnView.getItems().addAll(s);
+
+                }
+
+                catch (Exception e) {
+                    break;
+                }
+
+            }
+
+            ois.close();
+        }
+        catch (Exception e){
+            e.printStackTrace();
+        }
+
+        messageLabel.setText("Sucessfully lode the Table");
+
     }
 }

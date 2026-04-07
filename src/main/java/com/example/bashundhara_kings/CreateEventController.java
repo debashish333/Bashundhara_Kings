@@ -45,32 +45,37 @@ public class CreateEventController implements Serializable
 
     }
 
-    //String eventType, String description, String venue, String time, String eventID, LocalDate eventDate
+    //String eventType, String description, String venue, String time, Integer eventID, LocalDate eventDate
     @javafx.fxml.FXML
     public void saveButtonONACTION(ActionEvent actionEvent) {
-//        Eventmanager co = new Eventmanager(
-//
-//                typeCombobox.getValue(),
-//                descriptiontextfield.getText(),
-//                VanueCombobox.getValue(),
-//                timetextfield.getText(),
-//                idtextfield.getText(),
-//                date.getValue()
-//
-//
-//
-//
-//        ) {
-//
-//        };
+
+        if (typeCombobox.getValue() == null ||
+                descriptiontextfield.getText().isEmpty() ||
+                VanueCombobox.getValue() == null ||
+                timetextfield.getText().isEmpty() ||
+                idtextfield.getText().isEmpty() ||
+                date.getValue() == null) {
+
+            errorAlert("Please Fill Up All Fields");
+            return;
+        }
+        //if (idtextfield.getText()==)
+        for (Eventmanager co:EventmanagerList){
+            if (Integer.parseInt(idtextfield.getText())==co.getEventID()){
+                errorAlert("This Event ID is already in Use");
+                return;
+            }
+        }
+
         Eventmanager co = new Eventmanager(
                 typeCombobox.getValue(),
                 descriptiontextfield.getText(),
                 VanueCombobox.getValue(),
                 timetextfield.getText(),
-                idtextfield.getText(),
+                Integer.parseInt(idtextfield.getText()),
                 date.getValue()
         );
+        EventmanagerList.add(co);
 
         File f = new File("Event.bin");
         FileOutputStream fos;
@@ -87,6 +92,7 @@ public class CreateEventController implements Serializable
                 oos=new ObjectOutputStream(fos);
 
             }
+            successAlert("Event Saved Successfully!!");
 
             oos.writeObject(co);
             oos.close();
@@ -122,5 +128,17 @@ public class CreateEventController implements Serializable
         date.getEditor().clear();
         typeCombobox.getSelectionModel().clearSelection();
         VanueCombobox.getSelectionModel().clearSelection();
+    }
+
+    public void errorAlert(String ee){
+        Alert a= new Alert(Alert.AlertType.INFORMATION);
+        a.setContentText(ee);
+        a.showAndWait();
+    }
+
+    public void successAlert(String msg){
+        Alert a = new Alert(Alert.AlertType.INFORMATION);
+        a.setContentText(msg);
+        a.showAndWait();
     }
 }

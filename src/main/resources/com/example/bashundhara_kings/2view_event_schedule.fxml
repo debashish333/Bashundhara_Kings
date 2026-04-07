@@ -15,7 +15,7 @@
          </font>
       </Label>
       <Button layoutX="508.0" layoutY="25.0" mnemonicParsing="false" onAction="#backButtonONACTION" text="BACK" />
-      <TableView layoutX="31.0" layoutY="112.0" prefHeight="364.0" prefWidth="562.0">
+      <TableView fx:id="tableColumnView" layoutX="31.0" layoutY="112.0" prefHeight="364.0" prefWidth="562.0">
         <columns>
           <TableColumn fx:id="idTablecolumn" prefWidth="97.5999755859375" text="Event ID" />
           <TableColumn fx:id="typeTablecolumn" prefWidth="100.79998779296875" text="Event Type  " />
