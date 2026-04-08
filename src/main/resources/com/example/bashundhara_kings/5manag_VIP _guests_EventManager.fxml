@@ -26,7 +26,7 @@
       <Label layoutX="66.0" layoutY="420.0" text="Seat/Area" />
       <ComboBox fx:id="seatCombobox" layoutX="158.0" layoutY="416.0" prefWidth="150.0" />
       <Button layoutX="224.0" layoutY="478.0" mnemonicParsing="false" onAction="#addVIPButtonOnaction" prefHeight="26.0" prefWidth="183.0" text="Add VIP Guest" />
-      <Label fx:id="messageLabel" layoutX="407.0" layoutY="99.0" prefHeight="18.0" prefWidth="208.0" text="Label" />
+      <Label fx:id="messageLabel" layoutX="407.0" layoutY="99.0" prefHeight="18.0" prefWidth="208.0" />
       <Button layoutX="511.0" layoutY="25.0" mnemonicParsing="false" onAction="#backButtonOnAction" prefHeight="26.0" prefWidth="52.0" text="back" />
       <Button layoutX="501.0" layoutY="504.0" mnemonicParsing="false" onAction="#viewguestListButtonOnAction" prefHeight="26.0" prefWidth="110.0" text="View Guest LIst" />
    </children>

@@ -79,7 +79,7 @@ public class ViewEventScheduleController
             while (true) {
 
                 try {
-                    Eventmanager s = (Eventmanager) ois.readObject();
+                    Eventmanager s = (Eventmanager) ois.readObject();  // important line to read  the obj in to bin file
                     tableColumnView.getItems().addAll(s);
 
                 }

@@ -3,10 +3,7 @@ package com.example.bashundhara_kings;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
-import javafx.scene.control.ComboBox;
-import javafx.scene.control.Label;
-import javafx.scene.control.TextArea;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.scene.layout.AnchorPane;
 
 import java.io.File;
@@ -72,6 +69,7 @@ public class ManagVIPGuestsforEventManagerController
     public void viewguestListButtonOnAction(ActionEvent actionEvent) {
 
 
+
         try {
             FXMLLoader fxmlLoader=new FXMLLoader(getClass().getResource("5.1viwe_guest_list_for_EventManager.fxml"));
             Node node=fxmlLoader.load();
@@ -85,6 +83,16 @@ public class ManagVIPGuestsforEventManagerController
     //public VIPGuest(int guestID, String guestName, String designation, String seatArea, String eventType)
     @javafx.fxml.FXML
     public void addVIPButtonOnaction(ActionEvent actionEvent) {
+
+        if (giestidtextField.getText().isEmpty() ||
+                guestnametextField.getText().isEmpty() ||
+                designationtextarea.getText().isEmpty() ||
+                seatCombobox.getValue() == null ||
+                eventTypeCombobox.getValue() == null) {
+
+            messageLabel.setText("Please fill all fields!");
+            return;
+        }
         VIPGuest co=new VIPGuest(
                 Integer.parseInt(giestidtextField.getText()),
                 guestnametextField.getText(),
@@ -97,7 +105,7 @@ public class ManagVIPGuestsforEventManagerController
         );
         VIPList.add(co);
 
-        File f = new File("VIPGuest");
+        File f = new File("VIPGuest.bin");
         FileOutputStream fos;
         ObjectOutputStream oos;
 
@@ -115,9 +123,30 @@ public class ManagVIPGuestsforEventManagerController
             oos.close();
         }
 
+
         catch (Exception e){
             e.printStackTrace();
         }
+        informatoinAlert("Information Saved Successfully!!");
+        giestidtextField.clear();
+        guestnametextField.clear();
+        designationtextarea.clear();
+        seatCombobox.setValue(null);
+        eventTypeCombobox.setValue(null);
+
+
 
     }
+
+
+    public void informatoinAlert(String msg){
+        Alert a= new Alert(Alert.AlertType.INFORMATION);
+        a.setContentText(msg);
+        a.showAndWait();
+    }
+//    public void successAlert(String msg){
+//        Alert a = new Alert(Alert.AlertType.INFORMATION);
+//        a.setContentText(msg);
+//        a.showAndWait();
+//    }
 }
