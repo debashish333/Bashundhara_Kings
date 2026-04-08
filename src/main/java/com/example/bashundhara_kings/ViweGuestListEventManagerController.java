@@ -19,13 +19,13 @@ public class ViweGuestListEventManagerController
     private TableColumn<VIPGuest,Integer> guestIDTableColumn;
     @javafx.fxml.FXML
     private TableColumn<VIPGuest,String>  eventTypeTableColumn;
-    @javafx.fxml.FXML
+    @javafx.fxml.FX
     private TableColumn<VIPGuest,String>  guestNameTableColumn;
 
     @javafx.fxml.FXML
     public void initialize() {
         //int guestID, String guestName, String designation, String seatArea, String eventType
-        
+
 
     }
 
