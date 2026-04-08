@@ -10,9 +10,13 @@ import javafx.scene.control.TextArea;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.ObjectOutputStream;
+import java.io.Serializable;
 import java.util.ArrayList;
 
-public class SendNotificationController
+public class SendNotificationController implements Serializable
 {
     @javafx.fxml.FXML
     private ComboBox<String> selectuserCombobox;
@@ -38,7 +42,25 @@ public class SendNotificationController
             outputLabel.setText("Please select a user!");
             return;
         }
+        try {
+            File f =new File("Notifications.bin");
+            FileOutputStream fos;
+            ObjectOutputStream oos;
 
+            fos=new FileOutputStream(f);
+            oos=new ObjectOutputStream(fos);
+            oos.writeObject(messageLabel.getText());
+            oos.close();
+
+
+        }
+
+
+        catch (Exception e){
+
+
+            e.printStackTrace();
+        }
         outputLabel.setText("Notification sent successfully!");
         selectuserCombobox.getSelectionModel().clearSelection();
         messageLabel.clear();
