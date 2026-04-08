@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
-<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
@@ -15,9 +15,9 @@
             <Font name="System Bold" size="17.0" />
          </font>
       </Label>
-      <Label fx:id="massagLabel" layoutX="51.0" layoutY="87.0" text="Enter ID to find the history" />
+      <Label fx:id="massagLabel" layoutX="51.0" layoutY="87.0" prefHeight="18.0" prefWidth="362.0" text="Enter Type to find the history" />
       <Button layoutX="493.0" layoutY="136.0" mnemonicParsing="false" onAction="#viewhistoyOnActoin" prefHeight="26.0" prefWidth="122.0" text="View Event History" />
-      <TableView layoutX="20.0" layoutY="237.0" prefHeight="270.0" prefWidth="586.0">
+      <TableView fx:id="tableColumnView" layoutX="20.0" layoutY="237.0" prefHeight="270.0" prefWidth="586.0">
          <columns>
             <TableColumn fx:id="idTablecolumn" prefWidth="120.00002479553223" text="Event ID" />
             <TableColumn fx:id="typeTablecolumn" prefWidth="116.79998779296875" text="Event Type" />
@@ -26,8 +26,8 @@
             <TableColumn fx:id="timeTablecolumn" prefWidth="128.80001220703127" text="Time" />
          </columns>
       </TableView>
-      <Label layoutX="53.0" layoutY="146.0" text="Event ID:" />
-      <TextField layoutX="130.0" layoutY="142.0" />
+      <Label layoutX="53.0" layoutY="146.0" text="Event Type:" />
       <Button layoutX="541.0" layoutY="531.0" mnemonicParsing="false" onAction="#backButtonOnActoin" prefHeight="26.0" prefWidth="47.0" text="back" />
+      <ComboBox fx:id="filterEvenTypeComboBox" layoutX="130.0" layoutY="142.0" prefWidth="150.0" />
    </children>
 </AnchorPane>

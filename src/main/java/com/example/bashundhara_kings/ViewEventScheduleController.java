@@ -51,6 +51,8 @@ public class ViewEventScheduleController
 
     @javafx.fxml.FXML
     public void backButtonONACTION(ActionEvent actionEvent)throws Exception {
+
+
         try {
 
             FXMLLoader fxmlLoader= new FXMLLoader(getClass().getResource("event_manager_dashboard.fxml"));
@@ -64,6 +66,7 @@ public class ViewEventScheduleController
 
     @javafx.fxml.FXML
     public void refreshButtonOnAction(ActionEvent actionEvent) {
+        tableColumnView.getItems().clear();
         File f = new File("Event.bin");
         FileInputStream fis;
         ObjectInputStream ois;
