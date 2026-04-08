@@ -52,7 +52,7 @@ public class ViweGuestListEventManagerController
 
     @javafx.fxml.FXML
     public void loadButtonOnAction(ActionEvent actionEvent) {
-
+        TableolumnVieww.getItems().clear();
         File f = new File("VIPGuest.bin");
         FileInputStream fis;
         ObjectInputStream ois;

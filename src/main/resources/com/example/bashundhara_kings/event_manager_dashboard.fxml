@@ -18,10 +18,10 @@
       <Button alignment="CENTER" contentDisplay="CENTER" layoutX="334.0" layoutY="131.0" mnemonicParsing="false" onAction="#viewscheduleOnAtion" prefHeight="84.0" prefWidth="242.0" text="VIEW SCHEDULE" />
       <Button alignment="CENTER" contentDisplay="CENTER" graphicTextGap="10.0" layoutX="336.0" layoutY="226.0" mnemonicParsing="false" onAction="#deleteventOnAtion" prefHeight="84.0" prefWidth="242.0" text="DELETE EVENT" />
       <Button contentDisplay="CENTER" layoutX="340.0" layoutY="322.0" mnemonicParsing="false" onAction="#eventhistoryOnAtion" prefHeight="82.0" prefWidth="242.0" text="EVENT HISTORY" />
-      <Button contentDisplay="CENTER" layoutX="340.0" layoutY="421.0" mnemonicParsing="false" onAction="#approveeventOnActoin" prefHeight="82.0" prefWidth="242.0" text="APPROVE EVENT" />
+      <Button contentDisplay="CENTER" layoutX="340.0" layoutY="421.0" mnemonicParsing="false" onAction="#VipGuestFilterOnActoin" prefHeight="82.0" prefWidth="242.0" text="VIP GUEST SEARCH &amp; FILTER" />
       <Button alignment="CENTER" contentDisplay="CENTER" graphicTextGap="10.0" layoutX="40.0" layoutY="132.0" mnemonicParsing="false" onAction="#createventOnAtion" prefHeight="82.0" prefWidth="242.0" text="CREATE EVENT" />
       <Button alignment="CENTER" contentDisplay="CENTER" layoutX="44.0" layoutY="227.0" mnemonicParsing="false" onAction="#editeventOnAtion" prefHeight="82.0" prefWidth="242.0" text="EDIT EVENT" />
-      <Button contentDisplay="CENTER" layoutX="40.0" layoutY="428.0" mnemonicParsing="false" onAction="#manageVIPguestONAction" prefHeight="82.0" prefWidth="242.0" text=" MANAGE &quot;VIP&quot; GUEST LIST" />
+      <Button contentDisplay="CENTER" layoutX="40.0" layoutY="428.0" mnemonicParsing="false" onAction="#manageVIPguestONAction" prefHeight="82.0" prefWidth="242.0" text="&quot;VIP&quot; GUEST RECORD MANAGEMENT " />
       <Button contentDisplay="CENTER" layoutX="40.0" layoutY="322.0" mnemonicParsing="false" onAction="#sendnotificatiOnAction" prefHeight="82.0" prefWidth="242.0" text="SEND NOTIFICATION" />
    </children>
 </AnchorPane>
