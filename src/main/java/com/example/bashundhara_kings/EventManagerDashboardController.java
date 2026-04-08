@@ -102,17 +102,17 @@ public class EventManagerDashboardController implements Serializable
         }
     }
 
-    @Deprecated
-    public void approveeventOnActoin(ActionEvent actionEvent) {
-        try {
-            FXMLLoader fxmlLoader=new FXMLLoader(getClass().getResource("8vipguestFilter.fxml"));
-            Node node=fxmlLoader.load();
-            mainpane.getChildren().setAll(node);
-        }
-        catch (Exception e){
-            e.printStackTrace();
-        }
-    }
+//    @Deprecated
+//    public void approveeventOnActoin(ActionEvent actionEvent) {
+//        try {
+//            FXMLLoader fxmlLoader=new FXMLLoader(getClass().getResource("8vipguestFilter.fxml"));
+//            Node node=fxmlLoader.load();
+//            mainpane.getChildren().setAll(node);
+//        }
+//        catch (Exception e){
+//            e.printStackTrace();
+//        }
+//    }
 
     @javafx.fxml.FXML
     public void deleteventOnAtion(ActionEvent actionEvent) {
@@ -140,5 +140,15 @@ public class EventManagerDashboardController implements Serializable
 
     @javafx.fxml.FXML
     public void VipGuestFilterOnActoin(ActionEvent actionEvent) {
+
+
+        try {
+            FXMLLoader fxmlLoader=new FXMLLoader(getClass().getResource("8vipguestFilter.fxml"));
+            Node node=fxmlLoader.load();
+            mainpane.getChildren().setAll(node);
+        }
+        catch (Exception e){
+            e.printStackTrace();
+        }
     }
 }

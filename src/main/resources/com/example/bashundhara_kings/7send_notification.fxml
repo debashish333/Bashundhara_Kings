@@ -20,5 +20,6 @@
       <TextArea fx:id="messageLabel" layoutX="77.0" layoutY="152.0" prefHeight="275.0" prefWidth="488.0" />
       <Button layoutX="215.0" layoutY="460.0" mnemonicParsing="false" onAction="#sendNotificationButtonONAction" prefHeight="26.0" prefWidth="173.0" text="Send Notification" />
       <Label layoutX="56.0" layoutY="132.0" text="Message:" />
+      <Label fx:id="outputLabel" layoutX="321.0" layoutY="99.0" prefHeight="18.0" prefWidth="234.0" />
    </children>
 </AnchorPane>
