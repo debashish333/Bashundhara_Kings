@@ -6,13 +6,11 @@ public class  Securityguard {
 
     private String name;
     private  int id,password;
-    private LocalDate dob;
 
-    public Securityguard(String name, int id, int password, LocalDate dob) {
+    public Securityguard(String name, int id, int password) {
         this.name = name;
         this.id = id;
         this.password = password;
-        this.dob = dob;
     }
 
     public String getName() {
@@ -27,9 +25,7 @@ public class  Securityguard {
         return id;
     }
 
-    public void setId(int id) {
-        this.id = id;
-    }
+
 
     public int getPassword() {
         return password;
@@ -37,23 +33,5 @@ public class  Securityguard {
 
     public void setPassword(int password) {
         this.password = password;
-    }
-
-    public LocalDate getDob() {
-        return dob;
-    }
-
-    public void setDob(LocalDate dob) {
-        this.dob = dob;
-    }
-
-    @Override
-    public String toString() {
-        return "Securityguard{" +
-                "name='" + name + '\'' +
-                ", id=" + id +
-                ", password=" + password +
-                ", dob=" + dob +
-                '}';
     }
 }
