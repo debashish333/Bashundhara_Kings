@@ -8,12 +8,12 @@
 
 <AnchorPane fx:id="mainpane" prefHeight="472.0" prefWidth="565.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bashundhara_kings.debashish.check_salary_infoController">
    <children>
-      <Label layoutX="175.0" layoutY="34.0" text=" SALARY INFORMATION  " textFill="#1e1c1c">
+      <Label layoutX="167.0" layoutY="17.0" text=" SALARY INFORMATION  " textFill="#1e1c1c">
          <font>
             <Font name="System Bold" size="23.0" />
          </font>
       </Label>
-      <Label layoutX="188.0" layoutY="105.0" text="--- GUARD VERIFICATION---" textFill="#4e4949" />
+      <Label layoutX="207.0" layoutY="105.0" text="--- GUARD VERIFICATION---" textFill="#4e4949" />
       <Label layoutX="108.0" layoutY="171.0" text=" Employee ID:" textFill="#131212">
          <font>
             <Font size="13.0" />
@@ -36,5 +36,6 @@
          </font>
       </Label>
       <Button layoutX="256.0" layoutY="411.0" mnemonicParsing="false" onAction="#nextpageOnAction" text="Next page" />
+      <Label fx:id="MessageLabell" layoutX="95.0" layoutY="63.0" prefHeight="18.0" prefWidth="410.0" />
    </children>
 </AnchorPane>
