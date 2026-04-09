@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="mainpane" prefHeight="472.0" prefWidth="565.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bashundhara_kings.debashish.SecurityGuardDashbordController">
+   <children>
+      <Label layoutX="162.0" layoutY="35.0" text="BASHUNDHARA KING SECURITY PORTAL " textFill="#201f1f">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Button layoutX="466.0" layoutY="431.0" mnemonicParsing="false" onAction="#logoutButtonOnAction" text="LOG OUT" />
+      <Button layoutX="303.0" layoutY="123.0" mnemonicParsing="false" onAction="#markAttendanceButtonOnAction" prefHeight="55.0" prefWidth="198.0" text="MARK ATTENDANCE" />
+      <Button layoutX="69.0" layoutY="123.0" mnemonicParsing="false" onAction="#checksalaryButtonOnAction" prefHeight="55.0" prefWidth="198.0" text="CHECK SALARY INFORMATION" />
+      <Button layoutX="69.0" layoutY="197.0" mnemonicParsing="false" onAction="#reportEmergencyButtonOnAction" prefHeight="55.0" prefWidth="198.0" text="REPORT EMERGENCY" />
+      <Button layoutX="302.0" layoutY="197.0" mnemonicParsing="false" onAction="#viewMatchScheduleButtonOnAction" prefHeight="55.0" prefWidth="198.0" text="VIEW MATCH SCHEDULE" />
+      <Button layoutX="303.0" layoutY="266.0" mnemonicParsing="false" onAction="#submitDailySecurityReportButtonOnAction" prefHeight="55.0" prefWidth="198.0" text="SUBMIT DAILY SECURITY REPORT" />
+      <Button layoutX="304.0" layoutY="347.0" mnemonicParsing="false" onAction="#viewRulesAndInstructionsButtonOnAction" prefHeight="56.0" prefWidth="195.0" text="VIEW RULES AND INSTRUCTIONS" />
+      <Button layoutX="69.0" layoutY="347.0" mnemonicParsing="false" onAction="#checkNotificationsButtonOnAction" prefHeight="55.0" prefWidth="198.0" text="CHECK NOTIFICATIONS" />
+      <Button layoutX="69.0" layoutY="266.0" mnemonicParsing="false" onAction="#viewVipGuestListButtonOnAction" prefHeight="55.0" prefWidth="198.0" text="VIEW VIP GUEST LIST" />
+   </children>
+</AnchorPane>
