@@ -108,4 +108,18 @@ public class MarkAttendanceController
         a.setContentText(i);
         a.showAndWait();
     }
+
+    @javafx.fxml.FXML
+    public void viewPrviousAttendenceOnAction(ActionEvent actionEvent) {
+
+        try {
+            FXMLLoader fxmlLoader=new FXMLLoader(getClass().getResource("viewPreviousAttendence.fxml"));
+            Node node=fxmlLoader.load();
+            main.getChildren().setAll(node);
+        }
+        catch (Exception e){
+
+            e.printStackTrace();
+        }
+    }
 }

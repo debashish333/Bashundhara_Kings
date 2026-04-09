@@ -28,9 +28,10 @@
             <Font size="16.0" />
          </font>
       </Label>
-      <Button layoutX="185.0" layoutY="363.0" mnemonicParsing="false" onAction="#mekeattendenceButtonOnAction" prefHeight="26.0" prefWidth="150.0" style="-fx-background-color: orange;" text="Mark Attendance" />
-      <Button layoutX="472.0" layoutY="433.0" mnemonicParsing="false" onAction="#back" text="back" />
+      <Button layoutX="185.0" layoutY="363.0" mnemonicParsing="false" onAction="#mekeattendenceButtonOnAction" prefHeight="26.0" prefWidth="150.0" style="-fx-background-color: orange;" text="Attendance" />
+      <Button layoutX="448.0" layoutY="423.0" mnemonicParsing="false" onAction="#back" text="back" />
       <Label layoutX="139.0" layoutY="99.0" text="Guard Name:" />
       <TextField fx:id="nameTextfield" layoutX="230.0" layoutY="95.0" />
+      <Button layoutX="390.0" layoutY="389.0" mnemonicParsing="false" onAction="#viewPrviousAttendenceOnAction" prefHeight="26.0" prefWidth="156.0" text="View Pervious Attendence" />
    </children>
 </AnchorPane>

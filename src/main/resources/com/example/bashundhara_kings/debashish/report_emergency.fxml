@@ -9,7 +9,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="472.0" prefWidth="565.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bashundhara_kings.debashish.ReportEmergencyController">
    <children>
       <Label layoutX="194.0" layoutY="20.0" text="Report Emergency Cases">
@@ -21,7 +20,7 @@
       <ComboBox layoutX="194.0" layoutY="64.0" prefWidth="150.0" />
       <Label layoutX="32.0" layoutY="149.0" text="Description of the situation:" />
       <TextArea layoutX="186.0" layoutY="108.0" prefHeight="125.0" prefWidth="308.0" />
-      <Label layoutX="40.0" layoutY="267.0" text="Location of incident:" />
+      <Label layoutX="40.0" layoutY="258.0" text="Location of incident:" />
       <ComboBox layoutX="194.0" layoutY="254.0" prefWidth="150.0" />
       <Label layoutX="40.0" layoutY="310.0" text="Date:" />
       <DatePicker layoutX="187.0" layoutY="306.0" />
