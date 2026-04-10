@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400" prefWidth="600"
+            xmlns="http://javafx.com/javafx/25"
+            xmlns:fx="http://javafx.com/fxml">
+
+    <children>
+        <VBox alignment="CENTER" spacing="10">
+
+            <Label text="Recovery Report" style="-fx-font-size:18px;"/>
+            <Button text="Generate Report"/>
+
+        </VBox>
+    </children>
+
+</AnchorPane>

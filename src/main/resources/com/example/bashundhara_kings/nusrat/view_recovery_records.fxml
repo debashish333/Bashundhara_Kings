@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400" prefWidth="600"
+            xmlns="http://javafx.com/javafx/25"
+            xmlns:fx="http://javafx.com/fxml">
+
+    <children>
+        <VBox spacing="10" layoutX="20" layoutY="20">
+
+            <Label text="Recovery Records" style="-fx-font-size:18px;"/>
+
+            <TableView prefHeight="300" prefWidth="550">
+                <columns>
+                    <TableColumn text="Patient"/>
+                    <TableColumn text="Treatment"/>
+                    <TableColumn text="Status"/>
+                    <TableColumn text="Doctor"/>
+                </columns>
+            </TableView>
+
+        </VBox>
+    </children>
+
+</AnchorPane>
