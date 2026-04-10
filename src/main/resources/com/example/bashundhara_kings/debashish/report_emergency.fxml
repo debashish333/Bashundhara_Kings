@@ -9,24 +9,27 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="472.0" prefWidth="565.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bashundhara_kings.debashish.ReportEmergencyController">
+<AnchorPane fx:id="mainpane" prefHeight="472.0" prefWidth="565.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bashundhara_kings.debashish.ReportEmergencyController">
    <children>
       <Label layoutX="194.0" layoutY="20.0" text="Report Emergency Cases">
          <font>
             <Font name="System Bold" size="16.0" />
          </font>
       </Label>
-      <Label layoutX="32.0" layoutY="68.0" text="Emergency Type:" />
-      <ComboBox layoutX="194.0" layoutY="64.0" prefWidth="150.0" />
-      <Label layoutX="32.0" layoutY="149.0" text="Description of the situation:" />
-      <TextArea layoutX="186.0" layoutY="108.0" prefHeight="125.0" prefWidth="308.0" />
-      <Label layoutX="40.0" layoutY="258.0" text="Location of incident:" />
-      <ComboBox layoutX="194.0" layoutY="254.0" prefWidth="150.0" />
-      <Label layoutX="40.0" layoutY="310.0" text="Date:" />
-      <DatePicker layoutX="187.0" layoutY="306.0" />
-      <Label layoutX="41.0" layoutY="350.0" text="Time:" />
-      <TextField layoutX="186.0" layoutY="346.0" />
-      <Button layoutX="329.0" layoutY="388.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="146.0" text="Submit Report" />
-      <Label layoutX="388.0" layoutY="271.0" prefHeight="43.0" prefWidth="163.0" text="Label" />
+      <Label layoutX="32.0" layoutY="111.0" text="Emergency Type:" />
+      <ComboBox fx:id="EmergencyTypeCombobox" layoutX="194.0" layoutY="107.0" prefWidth="150.0" />
+      <Label layoutX="32.0" layoutY="192.0" text="Description of the situation:" />
+      <TextArea fx:id="descriptionTextarea" layoutX="186.0" layoutY="151.0" prefHeight="125.0" prefWidth="308.0" />
+      <Label layoutX="40.0" layoutY="301.0" text="Location of incident:" />
+      <ComboBox fx:id="locationofIncidencCobmobox" layoutX="194.0" layoutY="297.0" prefWidth="150.0" />
+      <Label layoutX="40.0" layoutY="353.0" text="Date:" />
+      <DatePicker fx:id="dob" layoutX="187.0" layoutY="349.0" />
+      <Label layoutX="41.0" layoutY="393.0" text="Time:" />
+      <TextField fx:id="tiem" layoutX="186.0" layoutY="389.0" prefWidth="163.0" />
+      <Button layoutX="404.0" layoutY="431.0" mnemonicParsing="false" onAction="#submitReportButtonOnAction" prefHeight="26.0" prefWidth="146.0" text="Submit Report" />
+      <Label fx:id="messageLabel" layoutX="41.0" layoutY="53.0" prefHeight="43.0" prefWidth="489.0" />
+      <Label layoutX="41.0" layoutY="429.0" text="Guard ID:" />
+      <TextField fx:id="giardidtextfield" layoutX="186.0" layoutY="425.0" />
+      <Button layoutX="494.0" layoutY="8.0" mnemonicParsing="false" onAction="#backButtonOnAction" text="back" />
    </children>
 </AnchorPane>
