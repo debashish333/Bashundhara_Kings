@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.collections.FXCollections?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0"
+            xmlns="http://javafx.com/javafx/25"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.RecoveryController">
+
+    <children>
+        <BorderPane prefHeight="400.0" prefWidth="600.0">
+
+            <!-- TOP TITLE -->
+            <top>
+                <Label text="Update Recovery Status"
+                       style="-fx-font-size:18px; -fx-padding:10;" />
+            </top>
+
+            <!-- LEFT MENU -->
+            <left>
+                <VBox spacing="10" style="-fx-padding:10; -fx-background-color:#34495e;">
+                    <Button text="Dashboard"/>
+                    <Button text="Add Record"/>
+                    <Button text="View Records"/>
+                    <Button text="Update Status"/>
+                    <Button text="Discharge"/>
+                    <Button text="Reports"/>
+                </VBox>
+            </left>
+
+            <!-- CENTER FORM -->
+            <center>
+                <GridPane hgap="10" vgap="10" alignment="CENTER">
+
+                    <!-- Labels -->
+                    <Label text="Patient Name:" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+                    <Label text="Current Status:" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+                    <Label text="Update Status:" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+
+                    <!-- Inputs -->
+                    <TextField promptText="Enter Patient Name"
+                               GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+
+                    <Label text="Recovering"
+                           GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+
+                    <ComboBox GridPane.rowIndex="2" GridPane.columnIndex="1">
+                        <items>
+                            <FXCollections fx:factory="observableArrayList">
+                                <String fx:value="Recovering"/>
+                                <String fx:value="Critical"/>
+                                <String fx:value="Recovered"/>
+                            </FXCollections>
+                        </items>
+                    </ComboBox>
+
+                    <!-- Button -->
+                    <Button text="Update Status"
+                            GridPane.rowIndex="3"
+                            GridPane.columnIndex="1"
+                            prefWidth="150"/>
+
+                </GridPane>
+            </center>
+
+        </BorderPane>
+    </children>
+
+</AnchorPane>

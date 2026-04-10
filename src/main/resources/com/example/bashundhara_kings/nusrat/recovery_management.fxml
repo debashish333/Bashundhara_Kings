@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0"
+            xmlns="http://javafx.com/javafx/25"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.RecoveryController">
+
+    <children>
+        <BorderPane prefHeight="400" prefWidth="600">
+
+            <top>
+                <Label text="Recovery Management Dashboard"
+                       style="-fx-font-size:18px; -fx-padding:10;"/>
+            </top>
+
+            <left>
+                <VBox spacing="10" style="-fx-padding:10; -fx-background-color:#34495e;">
+                    <Button text="Dashboard"/>
+                    <Button text="Add Record"/>
+                    <Button text="View Records"/>
+                    <Button text="Update Status"/>
+                    <Button text="Discharge"/>
+                    <Button text="Reports"/>
+                </VBox>
+            </left>
+
+            <center>
+                <VBox alignment="CENTER" spacing="10">
+                    <Label text="Welcome to Recovery System"/>
+                    <Label text="Total Patients: 25"/>
+                    <Label text="Recovered: 10"/>
+                </VBox>
+            </center>
+
+        </BorderPane>
+    </children>
+
+</AnchorPane>

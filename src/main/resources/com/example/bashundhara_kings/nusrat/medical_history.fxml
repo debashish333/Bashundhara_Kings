@@ -1,0 +1,14 @@
+<center>
+    <VBox spacing="10">
+        <TextField promptText="Enter Player ID"/>
+        <Button text="Load History"/>
+
+        <TableView>
+            <columns>
+                <TableColumn text="Date"/>
+                <TableColumn text="Injury"/>
+                <TableColumn text="Treatment"/>
+            </columns>
+        </TableView>
+    </VBox>
+</center>
