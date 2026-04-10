@@ -59,7 +59,8 @@ public class ViewMatchScheduleController
 
     @javafx.fxml.FXML
     public void scheduleButtonOnAction(ActionEvent actionEvent) {
-        File f =new File("event_manager_dashboard.fxml");
+        tableCalumnViewww.getItems().clear();
+        File f =new File("Event.bin");
         FileInputStream fis;
         ObjectInputStream ois;
 
@@ -71,6 +72,7 @@ public class ViewMatchScheduleController
                 try {
                     Eventmanager s= (Eventmanager) ois.readObject();
                     tableCalumnViewww.getItems().add(s);
+                    System.out.println(s);
 
 
 
