@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml">
+
+    <children>
+        <BorderPane prefHeight="400.0" prefWidth="600.0">
+
+            <!-- TOP -->
+            <top>
+                <Label text="Medical Panel" style="-fx-font-size:18px; -fx-padding:10;" />
+            </top>
+
+            <!-- LEFT MENU -->
+            <left>
+                <VBox spacing="10" style="-fx-padding:10; -fx-background-color:#2c3e50;">
+                    <Button text="Dashboard"/>
+                    <Button text="Add Patient"/>
+                    <Button text="View Patient"/>
+                    <Button text="Emergency"/>
+                    <Button text="Reports"/>
+                </VBox>
+            </left>
+
+            <!-- CENTER CONTENT -->
+            <center>
+                <VBox spacing="10" alignment="CENTER">
+                    <Label text="Content Here"/>
+                </VBox>
+            </center>
+
+        </BorderPane>
+    </children>
+
+</AnchorPane>
+
