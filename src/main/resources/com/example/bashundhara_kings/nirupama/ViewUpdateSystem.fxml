@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bashundhara_kings.nirupama.ViewUpdateSystem">
+   <children>
+      <Label fx:id="systemsettingTF" layoutX="252.0" layoutY="35.0" text="System Settings" />
+      <Button layoutX="149.0" layoutY="79.0" mnemonicParsing="false" onAction="#SystemnameOnAction" text=" System Name" />
+      <Button layoutX="149.0" layoutY="128.0" mnemonicParsing="false" onAction="#maxusersOnAction" text="Max Users " />
+      <Button layoutX="149.0" layoutY="175.0" mnemonicParsing="false" onAction="#sessiontimeoutOnAction" text="Session Timeout" />
+      <Button layoutX="149.0" layoutY="223.0" mnemonicParsing="false" onAction="#savesettingsOnAction" text="Save Settings " />
+      <Button layoutX="149.0" layoutY="268.0" mnemonicParsing="false" onAction="#backOnAction" text="Back" />
+   </children>
+</AnchorPane>
