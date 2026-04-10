@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.gluonhq.charm.glisten.layout.Layer?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bashundhara_kings.nirupama.ViewSystemLog">
+   <children>
+      <Label layoutX="232.0" layoutY="27.0" text="System logs" />
+      <Label layoutX="58.0" layoutY="78.0" prefHeight="18.0" prefWidth="126.0" text="User A logged in :" />
+      <Label layoutX="59.0" layoutY="109.0" prefHeight="18.0" prefWidth="172.0" text="User B created account :" />
+      <Label layoutX="59.0" layoutY="139.0" text="User C deleted account:" />
+      <Layer layoutX="72.0" layoutY="171.0" />
+      <Label layoutX="58.0" layoutY="171.0" text=" Admin updated roles:" />
+      <Button layoutX="212.0" layoutY="229.0" mnemonicParsing="false" onAction="#loadlogsOnAction" text="load logs" />
+      <Button layoutX="212.0" layoutY="268.0" mnemonicParsing="false" onAction="#backOnAction" text="Back" />
+      <TextField fx:id="userAloggedinTF" layoutX="196.0" layoutY="74.0" />
+      <TextField fx:id="userBcreatedaccountTF" layoutX="197.0" layoutY="105.0" />
+      <TextField fx:id="userCdeletedaccountTF" layoutX="198.0" layoutY="135.0" />
+      <TextField fx:id="adminupdatedrolesTF" layoutX="199.0" layoutY="167.0" />
+   </children>
+</AnchorPane>
