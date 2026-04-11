@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/25" prefWidth="600" prefHeight="400">
+
+    <top>
+        <Label text="Salary Management" style="-fx-font-size:18px; -fx-padding:10;" />
+    </top>
+
+    <left>
+        <VBox spacing="10" style="-fx-padding:10; -fx-background-color:#34495e;">
+            <Button text="Dashboard"/>
+            <Button text="Player Payment"/>
+            <Button text="Expenses"/>
+            <Button text="Salary"/>
+            <Button text="Financial Report"/>
+            <Button text="Budget"/>
+        </VBox>
+    </left>
+
+    <center>
+        <VBox spacing="10" alignment="CENTER">
+
+            <TextField promptText="Staff ID"/>
+            <TextField promptText="Salary Amount"/>
+            <DatePicker/>
+
+            <Button text="Pay Salary"/>
+
+        </VBox>
+    </center>
+
+</BorderPane>
