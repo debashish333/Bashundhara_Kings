@@ -9,29 +9,10 @@ import java.io.IOException;
 
 public class  HelloApplication extends Application {
 
-//    @Override
-//    public void start(Stage stage) throws IOException {
-//        FXMLLoader fxmlLoader = new FXMLLoader(
-//                HelloApplication.class.getResource("/com/example/bashundhara_kings/debashish/event_manager_dashboard.fxml")
-//        );
-//
-//        Scene scene = new Scene(fxmlLoader.load());
-//        stage.setTitle("BASHUNDHARA KINGS");
-//        stage.setScene(scene);
-//        stage.show();
-//    }
-//
-//    public static void main(String[] args) {
-//        launch();
-//    }
-
-    // manually open the project.
-
-//
     @Override
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(
-                HelloApplication.class.getResource("/com/example/bashundhara_kings/debashish/security_guard_dashbord.fxml")
+                HelloApplication.class.getResource("/com/example/bashundhara_kings/debashish/event_manager_dashboard.fxml")
         );
 
         Scene scene = new Scene(fxmlLoader.load());
@@ -43,5 +24,24 @@ public class  HelloApplication extends Application {
     public static void main(String[] args) {
         launch();
     }
+
+     //manually open the project.
+
+
+//    @Override
+//    public void start(Stage stage) throws IOException {
+//        FXMLLoader fxmlLoader = new FXMLLoader(
+//                HelloApplication.class.getResource("/com/example/bashundhara_kings/debashish/security_guard_dashbord.fxml")
+//        );
+//
+//        Scene scene = new Scene(fxmlLoader.load());
+//        stage.setTitle("BASHUNDHARA KINGS");
+//        stage.setScene(scene);
+//        stage.show();
+//    }
+//
+//    public static void main(String[] args) {
+//        launch();
+//    }
 }
 
