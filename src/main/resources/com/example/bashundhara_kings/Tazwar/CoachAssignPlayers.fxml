@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="560.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CoachAssignPlayersController">
+<AnchorPane prefHeight="560.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bashundhara_kings.tazwar.CoachAssignPlayersController">
     <children>
         <Label layoutX="230.0" layoutY="30.0" text="Assign Players to Training Session">
             <font>
