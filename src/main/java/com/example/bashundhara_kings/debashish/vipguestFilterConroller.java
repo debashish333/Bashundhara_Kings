@@ -49,11 +49,8 @@ public class vipguestFilterConroller
     @javafx.fxml.FXML
     public void FilterButtonOnAction(ActionEvent actionEvent) {
 
-
-
         if (idtextfield.getText()==null){
             erroralert("Enter the guest ID first");
-
         }
         TableolumnVieww.getItems().clear();
         File f = new File("VIPGuest.bin");

@@ -5,8 +5,11 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
+
+import java.io.IOException;
 
 public class PlayerDashboardController {
 
@@ -15,7 +18,10 @@ public class PlayerDashboardController {
 
     @FXML
     public void initialize() {
+
     }
+
+
 
     @FXML
     public void openViewTrainingSchedule(ActionEvent event) {
@@ -57,36 +63,60 @@ public class PlayerDashboardController {
         loadIntoMainpane("PlayerSendMessage.fxml");
     }
 
-<<<<<<< HEAD
+
+
     @FXML
     public void logout(ActionEvent event) {
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource(
-                    "/com/example/bashundhara_kings/loginView.fxml"));
+            FXMLLoader loader = new FXMLLoader(
+                    getClass().getResource("/com/example/bashundhara_kings/loginView.fxml")
+            );
+
             Scene scene = new Scene(loader.load());
+
             Stage stage = (Stage) mainpane.getScene().getWindow();
             stage.setTitle("Login");
             stage.setScene(scene);
+
         } catch (Exception e) {
             e.printStackTrace();
         }
     }
 
+
+
     private void loadIntoMainpane(String fxmlFile) {
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource(
-                    "/com/example/bashundhara_kings/tazwar/" + fxmlFile));
+            FXMLLoader loader = new FXMLLoader(
+                    getClass().getResource(
+                            "/com/example/bashundhara_kings/tazwar/" + fxmlFile
+                    )
+            );
+
             Node node = loader.load();
             mainpane.getChildren().setAll(node);
+
         } catch (Exception e) {
             e.printStackTrace();
         }
-=======
+    }
+
+
+
     private void loadScene(ActionEvent event, String fxmlFile) throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/+fxml/" + fxmlFile));
+
+        FXMLLoader loader = new FXMLLoader(
+                getClass().getResource(
+                        "/com/example/bashundhara_kings/tazwar/" + fxmlFile
+                )
+        );
+
         Scene scene = new Scene(loader.load());
-        Stage stage = (Stage) ((Button) event.getSource()).getScene().getWindow();
+
+        Stage stage = (Stage) ((Button) event.getSource())
+                .getScene()
+                .getWindow();
+
         stage.setScene(scene);
->>>>>>> 72d5d00eb621fa869391f5e1bc70a44fde1382f6
     }
 }

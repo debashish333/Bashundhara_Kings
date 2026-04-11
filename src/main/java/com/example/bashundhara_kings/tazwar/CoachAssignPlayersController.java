@@ -1,7 +1,5 @@
 package com.example.bashundhara_kings.tazwar;
 
-import com.example.bashundhara_kings.tazwar.Player;
-import com.example.bashundhara_kings.tazwar.TrainingSchedule;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
