@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="474.0" prefWidth="565.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bashundhara_kings.debashish.RulesAndInstructionsViewController">
+<AnchorPane fx:id="mainpane" prefHeight="474.0" prefWidth="565.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bashundhara_kings.debashish.RulesAndInstructionsViewController">
    <children>
       <Label layoutX="204.0" layoutY="24.0" text="Rules and Instructions">
          <font>
