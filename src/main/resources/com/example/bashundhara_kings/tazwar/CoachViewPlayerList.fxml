@@ -27,7 +27,5 @@
         </TableView>
 
         <Label fx:id="statusLabel" layoutX="40.0" layoutY="455.0" prefWidth="560.0" prefHeight="26.0" />
-
-        <Button layoutX="630.0" layoutY="455.0" prefWidth="80.0" prefHeight="27.0" text="Back" onAction="#goBack" />
     </children>
 </AnchorPane>

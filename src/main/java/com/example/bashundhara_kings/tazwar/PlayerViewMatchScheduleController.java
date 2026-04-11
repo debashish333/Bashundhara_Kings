@@ -4,11 +4,8 @@ import com.example.bashundhara_kings.tazwar.MatchSchedule;
 import javafx.collections.FXCollections;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
-import javafx.stage.Stage;
 
 import java.io.*;
 import java.util.ArrayList;
@@ -51,13 +48,5 @@ public class PlayerViewMatchScheduleController {
         try (ObjectInputStream in = new ObjectInputStream(new FileInputStream(FILE_PATH))) {
             return (List<MatchSchedule>) in.readObject();
         } catch (Exception e) { return new ArrayList<>(); }
-    }
-
-    @FXML
-    public void goBack(ActionEvent event) throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/PlayerDashboard.fxml"));
-        Scene scene = new Scene(loader.load());
-        Stage stage = (Stage) ((Button) event.getSource()).getScene().getWindow();
-        stage.setScene(scene);
     }
 }

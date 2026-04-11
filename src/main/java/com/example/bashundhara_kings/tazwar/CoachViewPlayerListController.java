@@ -4,12 +4,9 @@ import com.example.bashundhara_kings.tazwar.Player;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
-import javafx.fxml.FXMLLoader;
 import javafx.fxml.FXML;
-import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
-import javafx.stage.Stage;
 
 import java.io.*;
 import java.util.ArrayList;
@@ -57,13 +54,5 @@ public class CoachViewPlayerListController {
         } catch (Exception e) {
             return new ArrayList<>();
         }
-    }
-
-    @FXML
-    public void goBack(ActionEvent event) throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/CoachDashboard.fxml"));
-        Scene scene = new Scene(loader.load());
-        Stage stage = (Stage) ((Button) event.getSource()).getScene().getWindow();
-        stage.setScene(scene);
     }
 }

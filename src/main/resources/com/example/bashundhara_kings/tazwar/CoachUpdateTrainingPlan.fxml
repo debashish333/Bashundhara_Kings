@@ -43,6 +43,5 @@
         <Label fx:id="statusLabel" layoutX="80.0" layoutY="520.0" prefWidth="460.0" prefHeight="30.0" />
 
         <Button layoutX="260.0" layoutY="558.0" prefWidth="120.0" prefHeight="27.0" text="Update" onAction="#updatePlan" />
-        <Button layoutX="400.0" layoutY="558.0" prefWidth="70.0" prefHeight="27.0" text="Back" onAction="#goBack" />
     </children>
 </AnchorPane>
