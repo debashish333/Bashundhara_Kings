@@ -6,27 +6,25 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="480.0" prefWidth="780.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bashundhara_kings.tazwar.CoachViewScheduleController">
+<AnchorPane prefHeight="480.0" prefWidth="780.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bashundhara_kings.tazwar.PlayerViewTrainingScheduleController">
     <children>
-        <Label layoutX="260.0" layoutY="30.0" text="View Training Schedule">
+        <Label layoutX="255.0" layoutY="30.0" text="My Training Schedule">
             <font>
                 <Font name="Arial Bold Italic" size="23.0" />
             </font>
         </Label>
 
-        <TableView fx:id="scheduleTable" layoutX="40.0" layoutY="80.0" prefWidth="700.0" prefHeight="350.0">
+        <TableView fx:id="trainingTable" layoutX="40.0" layoutY="80.0" prefWidth="700.0" prefHeight="350.0">
             <columns>
                 <TableColumn fx:id="scheduleIdCol" text="Schedule ID" prefWidth="100.0" />
                 <TableColumn fx:id="dateCol" text="Date" prefWidth="100.0" />
                 <TableColumn fx:id="timeRangeCol" text="Start - End Time" prefWidth="130.0" />
                 <TableColumn fx:id="trainingTypeCol" text="Training Type" prefWidth="120.0" />
-                <TableColumn fx:id="venueCol" text="Venue" prefWidth="130.0" />
-                <TableColumn fx:id="assignedPlayersCol" text="Assigned Players" prefWidth="120.0" />
+                <TableColumn fx:id="venueCol" text="Venue / Location" prefWidth="130.0" />
+                <TableColumn fx:id="coachNameCol" text="Assigned Coach" prefWidth="120.0" />
             </columns>
         </TableView>
 
         <Label fx:id="statusLabel" layoutX="40.0" layoutY="445.0" prefWidth="560.0" prefHeight="26.0" />
-
-        <Button layoutX="660.0" layoutY="445.0" prefWidth="80.0" prefHeight="27.0" text="Back" onAction="#goBack" />
     </children>
 </AnchorPane>

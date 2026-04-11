@@ -2,10 +2,7 @@ package com.example.bashundhara_kings.tazwar;
 
 import com.example.bashundhara_kings.tazwar.TrainingSchedule;
 import javafx.event.ActionEvent;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Scene;
 import javafx.scene.control.*;
-import javafx.stage.Stage;
 
 import java.io.*;
 import java.time.LocalDate;
@@ -97,13 +94,5 @@ public class CoachCreateScheduleController {
         } catch (Exception e) {
             return new ArrayList<>();
         }
-    }
-
-    @javafx.fxml.FXML
-    public void goBack(ActionEvent event) throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/CoachDashboard.fxml"));
-        Scene scene = new Scene(loader.load());
-        Stage stage = (Stage) ((Button) event.getSource()).getScene().getWindow();
-        stage.setScene(scene);
     }
 }

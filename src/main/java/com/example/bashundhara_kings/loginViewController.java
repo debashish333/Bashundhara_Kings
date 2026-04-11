@@ -46,7 +46,7 @@ public class loginViewController {
         // Check dynamically created accounts first
         for (User u : userList) {
             if (u.getUserName().equals(userComboBox.getValue()) && u.getPassword().equals(passLogIn.getText())) {
-                loadScene(actionEvent, getDashboardFxml(u.getRole()), u.getRole() + " Dashboard");
+                loadScene(actionEvent, getFxmlPath(u.getRole()), u.getRole() + " Dashboard");
                 return;
             }
         }
@@ -62,28 +62,44 @@ public class loginViewController {
 
         switch (selectedUser) {
             case "Coach":
-                loadScene(actionEvent, "CoachDashboard.fxml", "Coach Dashboard");
+                loadScene(actionEvent,
+                        "/com/example/bashundhara_kings/Tazwar/CoachDashboard.fxml",
+                        "Coach Dashboard");
                 break;
             case "Player":
-                loadScene(actionEvent, "PlayerDashboard.fxml", "Player Dashboard");
+                loadScene(actionEvent,
+                        "/com/example/bashundhara_kings/Tazwar/PlayerDashboard.fxml",
+                        "Player Dashboard");
                 break;
             case "Event Manager":
-                loadScene(actionEvent, "EventManagerDashboard.fxml", "Event Manager Dashboard");
+                loadScene(actionEvent,
+                        "/com/example/bashundhara_kings/EventManagerDashboard.fxml",
+                        "Event Manager Dashboard");
                 break;
             case "Security Guard":
-                loadScene(actionEvent, "SecurityGuardDashboard.fxml", "Security Guard Dashboard");
+                loadScene(actionEvent,
+                        "/com/example/bashundhara_kings/SecurityGuardDashboard.fxml",
+                        "Security Guard Dashboard");
                 break;
             case "Accountant":
-                loadScene(actionEvent, "AccountantDashboard.fxml", "Accountant Dashboard");
+                loadScene(actionEvent,
+                        "/com/example/bashundhara_kings/AccountantDashboard.fxml",
+                        "Accountant Dashboard");
                 break;
             case "Medical Staff":
-                loadScene(actionEvent, "MedicalStaffDashboard.fxml", "Medical Staff Dashboard");
+                loadScene(actionEvent,
+                        "/com/example/bashundhara_kings/MedicalStaffDashboard.fxml",
+                        "Medical Staff Dashboard");
                 break;
             case "System Administrator":
-                loadScene(actionEvent, "SystemAdminDashboard.fxml", "System Administrator Dashboard");
+                loadScene(actionEvent,
+                        "/com/example/bashundhara_kings/SystemAdminDashboard.fxml",
+                        "System Administrator Dashboard");
                 break;
             case "Club Manager":
-                loadScene(actionEvent, "ClubManagerDashboard.fxml", "Club Manager Dashboard");
+                loadScene(actionEvent,
+                        "/com/example/bashundhara_kings/ClubManagerDashboard.fxml",
+                        "Club Manager Dashboard");
                 break;
             default:
                 showLoginError();
@@ -139,24 +155,24 @@ public class loginViewController {
         }
     }
 
-    private String getDashboardFxml(String role) {
+    // Returns the full absolute resource path for each role's dashboard FXML
+    private String getFxmlPath(String role) {
         switch (role) {
-            case "Coach":                return "CoachDashboard.fxml";
-            case "Player":               return "PlayerDashboard.fxml";
-            case "Event Manager":        return "EventManagerDashboard.fxml";
-            case "Security Guard":       return "SecurityGuardDashboard.fxml";
-            case "Accountant":           return "AccountantDashboard.fxml";
-            case "Medical Staff":        return "MedicalStaffDashboard.fxml";
-            case "System Administrator": return "SystemAdminDashboard.fxml";
-            case "Club Manager":         return "ClubManagerDashboard.fxml";
-            default:                     return "CoachDashboard.fxml";
+            case "Coach":                return "/com/example/bashundhara_kings/Tazwar/CoachDashboard.fxml";
+            case "Player":               return "/com/example/bashundhara_kings/Tazwar/PlayerDashboard.fxml";
+            case "Event Manager":        return "/com/example/bashundhara_kings/EventManagerDashboard.fxml";
+            case "Security Guard":       return "/com/example/bashundhara_kings/SecurityGuardDashboard.fxml";
+            case "Accountant":           return "/com/example/bashundhara_kings/AccountantDashboard.fxml";
+            case "Medical Staff":        return "/com/example/bashundhara_kings/MedicalStaffDashboard.fxml";
+            case "System Administrator": return "/com/example/bashundhara_kings/SystemAdminDashboard.fxml";
+            case "Club Manager":         return "/com/example/bashundhara_kings/ClubManagerDashboard.fxml";
+            default:                     return "/com/example/bashundhara_kings/Tazwar/CoachDashboard.fxml";
         }
     }
 
-    private void loadScene(ActionEvent event, String fxmlFile, String title) throws IOException {
-        FXMLLoader loader = new FXMLLoader(
-                getClass().getResource("/com/example/bashundhara_kings/" + fxmlFile)
-        );
+    // Accepts a full absolute path directly
+    private void loadScene(ActionEvent event, String fullFxmlPath, String title) throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource(fullFxmlPath));
         Scene scene = new Scene(loader.load());
         Stage stage = (Stage) loginInfo.getScene().getWindow();
         stage.setTitle(title);

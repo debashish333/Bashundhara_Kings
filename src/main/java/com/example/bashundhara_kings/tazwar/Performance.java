@@ -1,5 +1,4 @@
 package com.example.bashundhara_kings.tazwar;
-
 import java.io.Serializable;
 import java.time.LocalDate;
 

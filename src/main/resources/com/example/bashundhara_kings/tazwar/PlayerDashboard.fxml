@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="550.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bashundhara_kings.tazwar.PlayerDashboardController">
+   <children>
+
+      <!-- Left sidebar with buttons -->
+      <Label layoutX="30.0" layoutY="20.0" text="Player Dashboard">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Label>
+
+      <Button layoutX="20.0" layoutY="70.0"  prefWidth="200.0" prefHeight="32.0" text="View Training Schedule"  onAction="#openViewTrainingSchedule" />
+      <Button layoutX="20.0" layoutY="115.0" prefWidth="200.0" prefHeight="32.0" text="View Match Schedule"     onAction="#openViewMatchSchedule" />
+      <Button layoutX="20.0" layoutY="160.0" prefWidth="200.0" prefHeight="32.0" text="View Performance"        onAction="#openViewPerformance" />
+      <Button layoutX="20.0" layoutY="205.0" prefWidth="200.0" prefHeight="32.0" text="Mark Attendance"         onAction="#openMarkAttendance" />
+      <Button layoutX="20.0" layoutY="250.0" prefWidth="200.0" prefHeight="32.0" text="Request Equipment"       onAction="#openRequestEquipment" />
+      <Button layoutX="20.0" layoutY="295.0" prefWidth="200.0" prefHeight="32.0" text="View Announcements"      onAction="#openViewAnnouncements" />
+      <Button layoutX="20.0" layoutY="340.0" prefWidth="200.0" prefHeight="32.0" text="Update Profile"          onAction="#openUpdateProfile" />
+      <Button layoutX="20.0" layoutY="385.0" prefWidth="200.0" prefHeight="32.0" text="Message Coach"           onAction="#openSendMessage" />
+      <Button layoutX="20.0" layoutY="490.0" prefWidth="200.0" prefHeight="32.0" text="Logout"                  onAction="#logout" />
+
+      <!-- Main content pane - sub-views load here -->
+      <AnchorPane fx:id="mainpane" layoutX="240.0" layoutY="10.0" prefWidth="490.0" prefHeight="530.0" style="-fx-border-color: #cccccc; -fx-border-width: 1;" />
+
+   </children>
+</AnchorPane>
