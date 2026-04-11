@@ -9,11 +9,14 @@ module com.example.bashundhara_kings {
     //opens com.example.bashundhara_kings.debashish to javafx.base;
     opens com.example.bashundhara_kings.nirupama to javafx.fxml;
     opens com.example.bashundhara_kings.nusrat to javafx.fxml;
+    opens com.example.bashundhara_kings.tazwar to javafx.fxml;
 
     exports com.example.bashundhara_kings;
     exports com.example.bashundhara_kings.debashish;
     exports com.example.bashundhara_kings.nirupama;
     exports com.example.bashundhara_kings.nusrat;
+    exports com.example.bashundhara_kings.tazwar;
+
 
 
 

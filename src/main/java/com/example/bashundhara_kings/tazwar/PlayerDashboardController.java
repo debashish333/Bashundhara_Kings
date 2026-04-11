@@ -57,6 +57,7 @@ public class PlayerDashboardController {
         loadIntoMainpane("PlayerSendMessage.fxml");
     }
 
+<<<<<<< HEAD
     @FXML
     public void logout(ActionEvent event) {
         try {
@@ -80,5 +81,12 @@ public class PlayerDashboardController {
         } catch (Exception e) {
             e.printStackTrace();
         }
+=======
+    private void loadScene(ActionEvent event, String fxmlFile) throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/+fxml/" + fxmlFile));
+        Scene scene = new Scene(loader.load());
+        Stage stage = (Stage) ((Button) event.getSource()).getScene().getWindow();
+        stage.setScene(scene);
+>>>>>>> 72d5d00eb621fa869391f5e1bc70a44fde1382f6
     }
 }
