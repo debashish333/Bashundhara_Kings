@@ -56,7 +56,7 @@ public class PlayerDashboardController {
     }
 
     private void loadScene(ActionEvent event, String fxmlFile) throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/" + fxmlFile));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/+fxml/" + fxmlFile));
         Scene scene = new Scene(loader.load());
         Stage stage = (Stage) ((Button) event.getSource()).getScene().getWindow();
         stage.setScene(scene);

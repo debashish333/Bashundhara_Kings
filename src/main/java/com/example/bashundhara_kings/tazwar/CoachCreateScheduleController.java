@@ -1,6 +1,6 @@
 package com.example.bashundhara_kings.tazwar;
 
-import com.example.bashundhara_kings.tazwar.TrainingSchedule;
+
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
