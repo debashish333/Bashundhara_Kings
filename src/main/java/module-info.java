@@ -1,6 +1,7 @@
 module com.example.bashundhara_kings {
     requires javafx.controls;
     requires javafx.fxml;
+    requires java.desktop;
 
 
     opens com.example.bashundhara_kings to javafx.fxml;
