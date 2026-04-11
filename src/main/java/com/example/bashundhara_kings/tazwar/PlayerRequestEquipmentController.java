@@ -1,6 +1,6 @@
-package controller;
+package com.example.bashundhara_kings.tazwar;
 
-import model.Equipment;
+import com.example.bashundhara_kings.tazwar.Equipment;
 import javafx.collections.FXCollections;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;

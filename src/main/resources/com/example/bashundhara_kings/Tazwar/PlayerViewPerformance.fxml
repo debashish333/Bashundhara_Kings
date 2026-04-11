@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="480.0" prefWidth="820.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PlayerViewPerformanceController">
+<AnchorPane prefHeight="480.0" prefWidth="820.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bashundhara_kings.tazwar.PlayerViewPerformanceController">
     <children>
         <Label layoutX="255.0" layoutY="30.0" text="My Personal Performance">
             <font>

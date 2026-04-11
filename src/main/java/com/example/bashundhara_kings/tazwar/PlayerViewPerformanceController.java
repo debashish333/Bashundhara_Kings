@@ -1,6 +1,6 @@
-package controller;
+package com.example.bashundhara_kings.tazwar;
 
-import model.Performance;
+import com.example.bashundhara_kings.tazwar.Performance;
 import javafx.collections.FXCollections;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;

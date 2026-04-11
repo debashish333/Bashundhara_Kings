@@ -1,4 +1,4 @@
-package model;
+package com.example.bashundhara_kings.tazwar;
 
 import java.io.Serializable;
 

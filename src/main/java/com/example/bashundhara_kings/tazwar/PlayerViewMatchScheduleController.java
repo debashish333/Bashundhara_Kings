@@ -1,6 +1,6 @@
-package controller;
+package com.example.bashundhara_kings.tazwar;
 
-import model.MatchSchedule;
+import com.example.bashundhara_kings.tazwar.MatchSchedule;
 import javafx.collections.FXCollections;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;

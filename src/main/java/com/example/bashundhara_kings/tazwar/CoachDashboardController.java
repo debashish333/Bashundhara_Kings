@@ -1,4 +1,4 @@
-package controller;
+package com.example.bashundhara_kings.tazwar;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
