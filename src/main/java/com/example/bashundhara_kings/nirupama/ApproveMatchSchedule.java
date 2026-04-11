@@ -1,21 +1,18 @@
 package com.example.bashundhara_kings.nirupama;
 
 import javafx.event.ActionEvent;
+import javafx.scene.control.ComboBox;
 import javafx.scene.control.TextField;
 
-public class ViewSystemLog {
+public class ApproveMatchSchedule {
     @javafx.fxml.FXML
-    private TextField userBcreatedaccountTF;
+    private TextField match3TF;
     @javafx.fxml.FXML
-    private TextField adminupdatedrolesTF;
+    private ComboBox approveselectedmatchComboBox;
     @javafx.fxml.FXML
-    private TextField userAloggedinTF;
+    private TextField match2TF;
     @javafx.fxml.FXML
-    private TextField userCdeletedaccountTF;
-
-    @javafx.fxml.FXML
-    public void loadlogsOnAction(ActionEvent actionEvent) {
-    }
+    private TextField match1TF;
 
     @javafx.fxml.FXML
     public void backOnAction(ActionEvent actionEvent) {

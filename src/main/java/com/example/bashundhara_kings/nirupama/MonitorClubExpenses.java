@@ -1,21 +1,20 @@
 package com.example.bashundhara_kings.nirupama;
 
 import javafx.event.ActionEvent;
+import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 
-public class ViewSystemLog {
+public class MonitorClubExpenses {
     @javafx.fxml.FXML
-    private TextField userBcreatedaccountTF;
+    private TextField travelexpenseTF;
     @javafx.fxml.FXML
-    private TextField adminupdatedrolesTF;
+    private TextArea ExpensedetailsareaTA;
     @javafx.fxml.FXML
-    private TextField userAloggedinTF;
+    private TextField totalexpenseTF;
     @javafx.fxml.FXML
-    private TextField userCdeletedaccountTF;
-
+    private TextField equipmentTF;
     @javafx.fxml.FXML
-    public void loadlogsOnAction(ActionEvent actionEvent) {
-    }
+    private TextField salaryTF;
 
     @javafx.fxml.FXML
     public void backOnAction(ActionEvent actionEvent) {

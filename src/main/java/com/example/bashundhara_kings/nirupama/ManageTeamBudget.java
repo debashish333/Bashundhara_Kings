@@ -1,20 +1,17 @@
 package com.example.bashundhara_kings.nirupama;
 
 import javafx.event.ActionEvent;
+import javafx.scene.control.TextField;
 
-import java.awt.*;
-
-public class ManageRestoreData {
+public class ManageTeamBudget {
     @javafx.fxml.FXML
-    private Label s;
+    private TextField staffbudgetTF;
     @javafx.fxml.FXML
-    private TextField ChoosebackupfileTF;
+    private TextField equimentbudgetTF;
     @javafx.fxml.FXML
-    private TextField selectbackupfileTF;
-
+    private TextField playerbudgetTF;
     @javafx.fxml.FXML
-    public void restoredataOnAction(ActionEvent actionEvent) {
-    }
+    private TextField savebudgetTF;
 
     @javafx.fxml.FXML
     public void BackOnAction(ActionEvent actionEvent) {

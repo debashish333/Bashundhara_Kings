@@ -1,20 +1,21 @@
 package com.example.bashundhara_kings.nirupama;
 
 import javafx.event.ActionEvent;
-import javafx.scene.control.ComboBox;
 import javafx.scene.control.TextArea;
 
-public class SendSystemNotification {
+public class ApprovePlayerTransfers {
     @javafx.fxml.FXML
-    private ComboBox selectuserComboBox;
+    private TextArea playerdetailsareaTA;
+
     @javafx.fxml.FXML
-    private TextArea textareaTF;
+    public void rejectOnAction(ActionEvent actionEvent) {
+    }
 
     @javafx.fxml.FXML
     public void backOnAction(ActionEvent actionEvent) {
     }
 
     @javafx.fxml.FXML
-    public void sendnotificationOnAction(ActionEvent actionEvent) {
+    public void approveOnAction(ActionEvent actionEvent) {
     }
 }
