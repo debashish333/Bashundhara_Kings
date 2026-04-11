@@ -1,11 +1,14 @@
 package com.example.bashundhara_kings.nirupama;
 
+import javafx.event.ActionEvent;
 import javafx.scene.control.ComboBox;
 
 public class CreateManageUserRoles {
     private String Role;
     @javafx.fxml.FXML
-    private ComboBox roleComboBox;
+    private ComboBox selectuserComboBox;
+    @javafx.fxml.FXML
+    private ComboBox selectroleComboBOX;
 
     public CreateManageUserRoles(String role) {
         Role = role;
@@ -24,5 +27,13 @@ public class CreateManageUserRoles {
         return "CreatManageUserRoles{" +
                 "Role='" + Role + '\'' +
                 '}';
+    }
+
+    @javafx.fxml.FXML
+    public void backOnAction(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void updateroleOnAction(ActionEvent actionEvent) {
     }
 }
